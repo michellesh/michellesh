@@ -6,7 +6,7 @@ permalink: /projects/
 
 {% for project in site.projects %}
   <p>
-    <a href="{{ project.url }}"><strong>{{ project.name }}</strong></a> -
+    <a href="{{ project.url | relative_url }}"><strong>{{ project.name }}</strong></a> -
 
     {% if project.year %}
       <span class="date">{{ project.year }}</span> -

@@ -5,7 +5,7 @@ tags: [Tree of Light, ESP32, ESP8266]
 I am building a big LED structure with a friend. It's going to have 50,000 LEDs. I've never worked with that many. It's terrifying. And awesome!!! So, we had to choose the right microcontroller that can support that much data. 
 
 ### Need more memory!
-I know I need more memory. I used ESP8266s for the [Dance Floor project](/projects/dance-floor), which had 4800 LEDs, and the final code used 81% of available RAM and 26% of Flash (according to the Arduino IDE). But I still need WiFi capability, so the ESP32 seems like a good upgrade. Plus I've been super excited to tinker with ESP32s ever since falling in love with [this YouTube video](https://www.youtube.com/watch?v=Mgh2WblO5_c&ab_channel=ScottMarley) of a delightful music visualizer that uses an ESP32.
+I know I need more memory. I used ESP8266s for the [Dance Floor project]({{ '/projects/dance-floor' | relative_url }}), which had 4800 LEDs, and the final code used 81% of available RAM and 26% of Flash (according to the Arduino IDE). But I still need WiFi capability, so the ESP32 seems like a good upgrade. Plus I've been super excited to tinker with ESP32s ever since falling in love with [this YouTube video](https://www.youtube.com/watch?v=Mgh2WblO5_c&ab_channel=ScottMarley) of a delightful music visualizer that uses an ESP32.
 
 It would have been so fun to use Raspberry Pi for this project, because they are so cool. But they're out of stock everywhere at the moment.
 
@@ -25,7 +25,7 @@ Do I even need that extra PSRAM on the WROVER? I also found [this cool project](
 ### I bought a few options for testing. FOR SCIENCE!
 Definitely for science. (BUT ALSO FOR FUN.)
 
-![ESP32 three options](/assets/images/esp32-three-options.jpg)
+![ESP32 three options]({{ '/assets/images/esp32-three-options.jpg' | relative_url }})
 From left to right:
 - A basic [ESP32 with 512kB SRAM](https://www.amazon.com/gp/product/B07QCP2451){:target="blank"}
 - Also a [ESP32-WROVER with 16MB Flash/8MB PSRAM](https://www.amazon.com/gp/product/B07QDFP3WC){:target="blank"}
@@ -33,4 +33,5 @@ From left to right:
 
 How will all of these work with my 50k LED test? We'll find out! STAY TOOOOONED!
 
--L.O.L.
+Love,  
+LOL

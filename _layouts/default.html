@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {% feed_meta %}
     {% seo %}
     {% if jekyll.environment == "production" %}
-      <script src="my-analytics-script.js"></script>
+      <script src="{{ 'my-analytics-script.js' | relative_url }}"></script>
     {% endif %}
-    <script src="/assets/js/d3.v6.min.js"></script>
+    <script src="{{ '/assets/js/d3.v6.min.js' | relative_url }}"></script>
   </head>
   <body>
     <div class="container">
