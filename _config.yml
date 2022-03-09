@@ -24,3 +24,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+url: michellesh.github.io
+baseurl: /lady-of-light
