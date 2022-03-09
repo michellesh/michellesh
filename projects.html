@@ -1,0 +1,17 @@
+---
+title: Projects
+permalink: /projects/
+---
+<h1>Projects</h1>
+
+{% for project in site.projects %}
+  <p>
+    <a href="{{ project.url }}"><strong>{{ project.name }}</strong></a> -
+
+    {% if project.year %}
+      <span class="date">{{ project.year }}</span> -
+    {% endif %}
+
+    {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endfor %}
