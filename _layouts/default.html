@@ -10,6 +10,10 @@
       <script src="{{ 'my-analytics-script.js' | relative_url }}"></script>
     {% endif %}
     <script src="{{ '/assets/js/d3.v6.min.js' | relative_url }}"></script>
+
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
   </head>
   <body>
     <div class="container">

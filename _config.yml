@@ -26,3 +26,5 @@ plugins:
   - jekyll-seo-tag
 
 url: michellesh.github.io
+
+google_analytics: G-GC7LD3QDSX
