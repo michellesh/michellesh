@@ -3,7 +3,7 @@
 //$secondary-color: #b5ad9b;
 
 // blue & orange
-$base-color: #748aa7;
+$base-color: #809BBF;
 $secondary-color: #d3ab53;
 $tan: #f0e9e0;
 
@@ -57,6 +57,18 @@ th {
 pre {
   padding: 2em;
   background-color: $code-block;
+}
+
+pre code {
+  padding: 0;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  background-color: $code-block;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
 }
 
 .date {

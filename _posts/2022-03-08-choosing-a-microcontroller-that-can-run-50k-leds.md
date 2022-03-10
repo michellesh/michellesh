@@ -27,9 +27,9 @@ Definitely for science. (BUT ALSO FOR FUN.)
 
 ![ESP32 three options]({{ '/assets/images/esp32-three-options.jpg' | relative_url }})
 From left to right:
-- A basic [ESP32 with 512kB SRAM](https://www.amazon.com/gp/product/B07QCP2451){:target="blank"}
-- Also a [ESP32-WROVER with 16MB Flash/8MB PSRAM](https://www.amazon.com/gp/product/B07QDFP3WC){:target="blank"}
-- Another [ESP32-WROVER with 4MB Flash/8MB PSRAM](https://www.amazon.com/gp/product/B09BC5CNHM){:target="blank"}
+- A basic [ESP32 with 512kB SRAM](https://www.amazon.com/gp/product/B07QCP2451?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=073e7098865be5ba77b01e1b9142c43d&camp=1789&creative=9325){:target="blank"}
+- Also a [ESP32-WROVER with 16MB Flash/8MB PSRAM](https://www.amazon.com/gp/product/B07QDFP3WC?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=851359cd8bda9adf5c52b95067622c13&camp=1789&creative=9325){:target="blank"}
+- Another [ESP32-WROVER with 4MB Flash/8MB PSRAM](https://www.amazon.com/gp/product/B09BC5CNHM?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=320d7d7045c644f122a064541a8d6147&camp=1789&creative=9325){:target="blank"}
 
 How will all of these work with my 50k LED test? We'll find out! STAY TOOOOONED!
 
