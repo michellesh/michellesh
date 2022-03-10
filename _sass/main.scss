@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-  margin: 2em 0;
+  padding: 2em 0;
 }
 
 nav a, nav strong {
@@ -64,6 +64,30 @@ pre {
   color: $secondary-color;
 }
 
+/* Sticky footer!
+ * Thank you: https://css-tricks.com/couple-takes-sticky-footer/
+ */
+$footerHeight: 6em;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -($footerHeight);
+}
+
+.footer-push, footer {
+  height: $footerHeight;
+}
+
 .footer {
-  margin-bottom: 6em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.github-icon {
+  opacity: 0.5;
 }

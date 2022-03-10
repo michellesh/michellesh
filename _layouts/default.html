@@ -16,10 +16,18 @@
     {% endif %}
   </head>
   <body>
-    <div class="container">
-      {% include navigation.html %}
-      {{ content }}
-      {% include footer.html %}
+    <div class="wrapper">
+      <div class="container">
+        {% include navigation.html %}
+        {{ content }}
+        <div class="footer-push"></div>
+      </div>
     </div>
+
+    <footer>
+      <div class="container">
+        {% include footer.html %}
+      </div>
+    </footer>
   </body>
 </html>
