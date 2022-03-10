@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [Tree of Light, ESP32, ESP8266]
+project: tree-of-light
 ---
 I am building a big LED structure with a friend. It's going to have 50,000 LEDs. I've never worked with that many. It's terrifying. And awesome!!! So, we had to choose the right microcontroller that can support that much data. 
 
@@ -33,5 +33,4 @@ From left to right:
 
 How will all of these work with my 50k LED test? We'll find out! STAY TOOOOONED!
 
-Love,  
-LOL
+-L.O.L.

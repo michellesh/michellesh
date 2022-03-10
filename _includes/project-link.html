@@ -1,0 +1,8 @@
+{% assign project-id = include.content %}
+
+{% if project-id %}
+  {% assign project = site.projects | where: 'project-id', project-id | first %}
+
+  <strong>Project: </strong>
+  <a href="{{ project.url | relative_url }}">{{ project.name }}</a>
+{% endif %}

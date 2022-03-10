@@ -15,10 +15,6 @@ permalink: /blog/
 
     <br/>
 
-    <strong>Tags:</strong>
-    {% for tag in post.tags %}
-      <a href="#">{{ tag }}</a>
-      <span>{% if tag != post.tags.last %}, {% endif %}</span>
-    {% endfor %}
+    {% include project-link.html content=post.project %}
   </p>
 {% endfor %}
