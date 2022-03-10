@@ -3,6 +3,10 @@ layout: default
 ---
 <h1>{{ page.name }}</h1>
 
+{% if page.github %}
+  <a href="{{ page.github }}" target="_blaank">Read all the {{ page.name }} code on GitHub!</a>
+{% endif %}
+
 {{ content }}
 
 {% assign filtered_posts = site.posts | where: 'project', page.project-id %}
