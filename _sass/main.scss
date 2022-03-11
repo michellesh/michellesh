@@ -82,6 +82,26 @@ code {
   color: $secondary-color;
 }
 
+.fit-image {
+  width: 100%;
+}
+
+.column-container {
+  display: flex;
+}
+
+.column:not(.column:last-child) {
+  margin-right: 0.5em;
+}
+
+.column {
+  flex: 1 1 0px;
+}
+
+.column-img {
+  margin-bottom: 0.3em;
+}
+
 /* Sticky footer!
  * Thank you: https://css-tricks.com/couple-takes-sticky-footer/
  */
