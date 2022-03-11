@@ -2,10 +2,10 @@
 //$base-color: #649466;
 //$secondary-color: #b5ad9b;
 
-// blue & orange
+// blue & tan
 $base-color: #809BBF;
-$secondary-color: #d3ab53;
-$tan: #f0e9e0;
+$secondary-color: #bc935c;
+$tan: #f3eee7;
 
 $code-block: #f5f7f9;
 
@@ -69,6 +69,12 @@ code {
   border-radius: 6px;
   padding: 0.2em 0.4em;
   font-size: 85%;
+}
+
+.highlighted {
+  background-color: $tan;
+  border-radius: 6px;
+  padding: 0.1em 0.2em;
 }
 
 .date {
