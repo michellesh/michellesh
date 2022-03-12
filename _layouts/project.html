@@ -11,6 +11,28 @@ layout: default
 
 {{ content }}
 
+<div class='column-container'>
+  {% for column in page.columns %}
+    <div class='column'>
+      {% assign column-images = page.images | where: 'column', column %}
+      {% for image in column-images %}
+        {% assign filename = page.image-dir | append: image.filename %}
+        <img
+          class="fit-image column-img"
+          title="{{ image.title }}"
+          src="{{ filename | relative_url }}"
+        />
+        {% if image.photo-by %}
+          <div class="photo-by">
+            ^ photo by
+            <a href="{{ image.photo-by-url }}">{{ image.photo-by }}</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+
 {% assign filtered_posts = site.posts | where: 'project', page.project-id %}
 
 {% if filtered_posts.size > 0 %}
