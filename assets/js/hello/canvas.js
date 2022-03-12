@@ -8,6 +8,7 @@ canvas.height = HEIGHT;
 helloDiv.appendChild(canvas);
 
 const SCALE = 0.8;
+const TOP = 130;
 const MIN_RADIUS = 3;
 const MAX_RADIUS = 5;
 const NUM_NODES = HELLO_NODES.length * 6;
@@ -29,7 +30,7 @@ const nodes = d3.range(NUM_NODES).map(i => {
     forceX: forceNode.x - minX,
     forceY: forceNode.y - minY,
     x: WIDTH / 2,
-    y: HEIGHT / 2
+    y: TOP
   };
 });
 
@@ -41,7 +42,7 @@ const onPointerMove = event => {
 };
 
 const forces = {
-  center: ({ width = 0 } = {}) => d3.forceCenter(WIDTH / (2 * SCALE), HEIGHT / 2),
+  center: ({ width = 0 } = {}) => d3.forceCenter(WIDTH / (2 * SCALE), TOP),
   charge: ({ strength = -15 } = {}) =>
     d3.forceManyBody().strength(d => (d.isPointer ? strength : 0)),
   collide: () => d3.forceCollide().radius(d => d.r / 2),

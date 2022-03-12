@@ -6,10 +6,14 @@ permalink: /projects/
 
 {% for project in site.projects %}
   <p>
-    <a href="{{ project.url | relative_url }}"><strong>{{ project.name }}</strong></a> -
+    <a href="{{ project.url | relative_url }}">
+      <strong>{{ project.name }}</strong>
+    </a>
+    -
 
     {% if project.year %}
-      <span class="date">{{ project.year }}</span> -
+      <span class="date">{{ project.year }}</span>
+      -
     {% endif %}
 
     {{ project.excerpt | truncatewords: 20, ' ...' | remove: '<p>' | remove: '</p>' }}
