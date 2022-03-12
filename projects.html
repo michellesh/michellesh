@@ -12,6 +12,11 @@ permalink: /projects/
       <span class="date">{{ project.year }}</span> -
     {% endif %}
 
-    {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
+    {{ project.excerpt | truncatewords: 20, ' ...' | remove: '<p>' | remove: '</p>' }}
+
+    {% if project.main-image %}
+      {% assign filename = project.image-dir | append: project.main-image %}
+      <img class="fit-image column-img" src="{{ filename | relative_url }}" />
+    {% endif %}
   </p>
 {% endfor %}

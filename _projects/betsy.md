@@ -3,6 +3,7 @@ name: Betsy
 project-id: betsy
 year: 2019
 github: https://github.com/michellesh/led-ceiling
+main-image: cozy-dome.jpg
 image-dir: /assets/images/betsy/
 columns: [1, 2]
 images:
