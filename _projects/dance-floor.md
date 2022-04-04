@@ -4,6 +4,8 @@ project-id: dance-floor
 year: 2021
 github: https://github.com/michellesh/dance-floor
 main-image: dance-floor.jpg
+main-image-by: Dan Krauss
+main-image-by-url: https://www.instagram.com/dankrauss/
 image-dir: /assets/images/dance-floor/
 columns: [1]
 images:

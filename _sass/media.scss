@@ -3,10 +3,16 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+  body, nav {
+    font-size: 1.3em;
+  }
+
   .container {
-    padding: 2em;
-    max-width: 90%;
+    margin: auto;
+    max-width: none;
     width: 90%;
+    padding: 1em;
+    overflow-x: hidden;
   }
 
   iframe {
@@ -20,7 +26,8 @@
 
   table {
     font-size: 2em;
-    width: 100%;
+    width: 90%;
+    overflow-x: auto;
   }
 
   .column-container {
