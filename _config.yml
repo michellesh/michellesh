@@ -28,3 +28,8 @@ plugins:
 url: michellesh.github.io
 
 google_analytics: G-GC7LD3QDSX
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

@@ -18,7 +18,7 @@ Next I tried specifically searching for issues storing large global variables an
 
 BUT THEN, I found the answer I needed by searching on the Adafruit discord server for the keyword "DRAM". Thank you to the helpful human that suggested using the `new` operator in the `setup()` function, and explained that <span class="highlighted">the `new` operator handles memory allocation as well as freeing the memory, so you don’t end up with a memory leak</span>. This solved it for me, and I got the code to compile successfully with all 50k LEDs. Structure looks like:
 
-```
+```cpp
 CRGB* LED_STRIP_1;
 
 void setup() {
@@ -48,7 +48,7 @@ I nicknamed the models [ESP32 Basic](https://www.amazon.com/gp/product/B07QCP245
 ### Interlude: It probably helps to call `FastLED.addLEDs` on a portion of the LEDs
 
 Just for fun, I tried uploading the [control sketch](https://github.com/michellesh/tree-of-light/blob/6332b55f43cc431bf97a5d9864c5466d8d9e24d0/arduino/50k-LED-test-control/50k-LED-test-control.ino){:target="blank"}, (which declares all the LEDs as one LED strip,) with the full amount of LEDs:
-```
+```cpp
 #define NUM_LEDS  47408
 
 CRGB *leds;
@@ -93,4 +93,4 @@ I wanted to make sure I put a bit more due diligence into making sure I was *usi
 Very Exciting Stuff coming up!! We built a mini Tree of Light and I will be adorning it with LEDs. VERY EXCITING!
 
 
--L.O.L.
+-Micky

@@ -33,4 +33,4 @@ From left to right:
 
 How will all of these work with my 50k LED test? We'll find out! STAY TOOOOONED!
 
--L.O.L.
+-Micky
