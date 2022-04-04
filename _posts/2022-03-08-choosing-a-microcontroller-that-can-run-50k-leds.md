@@ -25,7 +25,7 @@ Do I even need that extra PSRAM on the WROVER? I also found [this cool project](
 ### I bought a few options for testing. FOR SCIENCE!
 Definitely for science. (BUT ALSO FOR FUN.)
 
-![ESP32 three options]({{ '/assets/images/esp32-three-options.jpg' | relative_url }})
+![ESP32 three options]({{ '/assets/images/esp32-three-options.jpg' | relative_url }}){:class="fit-image"}
 From left to right:
 - A basic [ESP32 with 512kB SRAM](https://www.amazon.com/gp/product/B07QCP2451?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=073e7098865be5ba77b01e1b9142c43d&camp=1789&creative=9325){:target="blank"}
 - Also a [ESP32-WROVER with 16MB Flash/8MB PSRAM](https://www.amazon.com/gp/product/B07QDFP3WC?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=851359cd8bda9adf5c52b95067622c13&camp=1789&creative=9325){:target="blank"}

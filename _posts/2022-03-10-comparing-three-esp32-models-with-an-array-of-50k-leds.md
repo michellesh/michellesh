@@ -42,7 +42,7 @@ Time to compare the [various ESP32 models I bought]({% post_url 2022-03-08-choos
 
 I nicknamed the models [ESP32 Basic](https://www.amazon.com/gp/product/B07QCP2451?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=073e7098865be5ba77b01e1b9142c43d&camp=1789&creative=9325){:target="blank"}, [WROVER 1](https://www.amazon.com/gp/product/B07QDFP3WC?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=851359cd8bda9adf5c52b95067622c13&camp=1789&creative=9325){:target="blank"}, and [WROVER 2](https://www.amazon.com/gp/product/B09BC5CNHM?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=320d7d7045c644f122a064541a8d6147&camp=1789&creative=9325){:target="blank"}. The video compares the Control to each ESP model, and then at the end compares the ESP32 Basic to the WROVER 2. <span class="highlighted">The WROVER 1 was too slow to even be in the running!</span> (I didn't set any configuration differently, but I am probably still doing something wrong there...)
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/2qbO-BmZtuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="500" src="https://www.youtube.com/embed/2qbO-BmZtuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 &nbsp;  
 ### Interlude: It probably helps to call `FastLED.addLEDs` on a portion of the LEDs

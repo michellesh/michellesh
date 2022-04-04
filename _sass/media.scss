@@ -3,7 +3,35 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+  .container {
+    padding: 2em;
+    max-width: 90%;
+    width: 90%;
+  }
+
+  iframe {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  nav {
+    padding: 4em 0;
+  }
+
+  table {
+    font-size: 2em;
+    width: 100%;
+  }
+
   .column-container {
     display: block;
+  }
+
+  pre {
+    font-size: 2em;
+  }
+
+  .footer img {
+    width: 4em;
   }
 }

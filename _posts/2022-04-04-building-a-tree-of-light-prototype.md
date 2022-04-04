@@ -192,7 +192,7 @@ void loop() {
 
 This post is meant to be about the build, not the light patterns. I will be developing a lot more light patterns for this thing! But if you read this far down this post, then I love you. And you probably want to see this thing do something cool! So here's a nice simple one.
 
-<iframe width="650" height="400" src="https://www.youtube.com/embed/u098ZPlu1q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="500" src="https://www.youtube.com/embed/u098ZPlu1q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What's next?
 
