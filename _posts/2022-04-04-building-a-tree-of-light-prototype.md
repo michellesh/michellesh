@@ -10,6 +10,7 @@ images:
   disc-plan-petal-group: /assets/images/building-a-tree-of-light-prototype/disc-plan-petal-group.png
   disc-plan-strip: /assets/images/building-a-tree-of-light-prototype/disc-plan-strip.jpg
   ws2812b-full-white: /assets/images/building-a-tree-of-light-prototype/ws2812b-full-white.jpg
+  schematic: /assets/images/building-a-tree-of-light-prototype/schematic.jpg
   groups-of-200-leds: /assets/images/building-a-tree-of-light-prototype/groups-of-200-leds.jpg
   soldering-glueing-1: /assets/images/building-a-tree-of-light-prototype/soldering-glueing-1.jpg
   soldering-glueing-2: /assets/images/building-a-tree-of-light-prototype/soldering-glueing-2.jpg
@@ -64,34 +65,6 @@ Here's what that strip looks like all spread out:
 Starting at the center of the disc, the LED strip will trace one inner and one outer petal, and then the pattern will repeat starting with the next inner petal.
 At first I planned to bend the LED strips on the 120 and 90 degree turns, but the LED strip felt too fragile, and wouldn't sit flat enough. So I soldered short little jumper wires between each straight segment. I really enjoy soldering, so I didn't mind the extra soldering time. :)
 
-## Where to inject power? Dividing LEDs into groups
-
-1284 LEDs is obviously too many LEDs to string together in one strand. To figure out how often I would need to inject power, I unrolled one of the LED strips I bought and set the whole thing to white on full brightness. It looked obviously yellow around 2/3rds of the way down the strip, after ~200 LEDs. So I injected power every 200 LEDs.
-
-![WS2812B full white]({{ page.images.ws2812b-full-white | relative_url }}){:class="fit-image"}
-
-<div class="column-container">
-  <div class="p column">
-    <img alt="Groups of 200 LEDs" class="fit-image" src="{{ page.images.groups-of-200-leds | relative_url }}" />
-  </div>
-  <div class="p column">
-    This diagram shows how all 1284 LEDs are split up into groups of ~200. I routed wires to each group to inject power. Each group also has a single data pin on the ESP32. Some groups have less than 200 because I wanted to start each new group of 200 at the beginning of the petal right near the center rod. It worked out to be 7 groups of LEDs:
-
-    <br />
-    <br />
-
-    <div style="color: #5D8475; font-weight: bold">ESP32 Pin 1: 200 LEDs</div>
-    <div style="color: #A2AF79; font-weight: bold">ESP32 Pin 2: 184 LEDs</div>
-    <div style="color: #ECCC7F; font-weight: bold">ESP32 Pin 3: 196 LEDs</div>
-    <div style="color: #F2AD70; font-weight: bold">ESP32 Pin 4: 202 LEDs</div>
-    <div style="color: #EC966A; font-weight: bold">ESP32 Pin 5: 198 LEDs</div>
-    <div style="color: #DE6F5C; font-weight: bold">ESP32 Pin 6: 190 LEDs</div>
-    <div style="color: #833F40; font-weight: bold">ESP32 Pin 7: 114 LEDs</div>
-    <br />
-    Total: 1284 LEDs
-  </div>
-</div>
-
 ## How big does the power supply need to be?
 
 I happened to have this [5V power supply](https://www.amazon.com/gp/product/B06XK3X3PW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=4ff7263f0b15b412e35aed1e6374c07f&camp=1789&creative=9325){:target="blank"} lying around. Here's how I calculated whether it would be big enough, using `P = V * A`.
@@ -104,6 +77,37 @@ I happened to have this [5V power supply](https://www.amazon.com/gp/product/B06X
 | all LEDs (1284 LEDs) | | 256.8W x 10%*&#42;* =<br/><span class="green">**282.48W**</span> | 5V | 51.36A<br /><span class="green">**56.5A**</span>
 
 *&#42; [This YouTube video](https://www.youtube.com/watch?v=fWYSF-t_tic){:target="blank"} recommended getting a power supply that has a capacity at least 10% higher than the max needed.*
+
+## Where to inject power?
+
+1284 LEDs is obviously too many LEDs to string together in one strand. To figure out how often I would need to inject power, I unrolled one of the LED strips I bought and set the whole thing to white on full brightness. It looked obviously yellow around 2/3rds of the way down the strip, after ~200 LEDs. So I injected power every 200 LEDs.
+
+![WS2812B full white]({{ page.images.ws2812b-full-white | relative_url }}){:class="fit-image"}
+
+## Dividing LEDs into groups
+
+<div class="column-container">
+  <div class="p column">
+    <img alt="Groups of 200 LEDs" class="fit-image" src="{{ page.images.groups-of-200-leds | relative_url }}" />
+  </div>
+  <div class="p column">
+    This diagram shows how all 1284 LEDs are split up into groups of ~200. I routed wires to each group to inject power. Each group also has a single data pin on the ESP32. Some groups have less than 200 because I wanted to start each new group of 200 at the beginning of the petal right near the center rod. It worked out to be 7 groups of LEDs:
+    <p>
+      <div class="campfire1">ESP32 Pin 2: 200 LEDs</div>
+      <div class="campfire2">ESP32 Pin 4: 184 LEDs</div>
+      <div class="campfire3">ESP32 Pin 5: 196 LEDs</div>
+      <div class="campfire4">ESP32 Pin 12: 202 LEDs</div>
+      <div class="campfire5">ESP32 Pin 13: 198 LEDs</div>
+      <div class="campfire6">ESP32 Pin 14: 190 LEDs</div>
+      <div class="campfire7">ESP32 Pin 18: 114 LEDs</div>
+    </p>
+    Total: 1284 LEDs
+  </div>
+</div>
+
+The power supply and ESP32 live on the top of the tree. I ran wires from there  down through little holes we drilled in the plexiglass to the beginning of each LED group, and connected to the strips with 3-pin connectors. The LED groups that start on one disc and end on the next disc are also connected together with the 3-pin connectors.
+
+![Schematic]({{ page.images.schematic | relative_url }}){:class="fit-image"}
 
 ## Soldering and Glueing
 
