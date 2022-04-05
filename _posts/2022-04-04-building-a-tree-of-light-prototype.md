@@ -118,7 +118,7 @@ The soldering and glueing went smoothly for the most part! The trickiest part wa
 
 ## Code!
 
-I ended up making one big long array of the LEDs for each disc chained together. Then I created a simple `struct` for each disc that stored a pointer to that disc's LEDs, so I can access them per-disc.
+Setting each disc to a different color involved figuring out how to map LEDs from pins to discs. I ended up making one big long array of the LEDs for each disc chained together. Then I created a simple `struct` for each disc that stored a pointer to that disc's LEDs, so I can access them per-disc.
 
 Defining the FastLED array. Just a big list of all LEDs chained together:
 
