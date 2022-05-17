@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tree of Light Prototype
+main-image-url: /assets/images/tree-of-light-prototype/prototype-lit-up-2.jpg
 excerpt: A 4-foot tall prototype for a larger LED structure we're building this year that we're calling the "Tree of Light". This post is about my process of adding LEDs to it!
 images:
   prototype-without-leds: /assets/images/tree-of-light-prototype/prototype-without-leds.jpg

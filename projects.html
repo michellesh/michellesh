@@ -4,13 +4,25 @@ permalink: /projects/
 ---
 <h1>Projects</h1>
 
-{% for project in site.projects %}
-  <p>
-    <a href="{{ project.url | relative_url }}"><strong>{{ project.title }}</strong></a> -
-    {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
+Showcase for smaller scale projects! I also post these on <a href="https://www.hackster.io/michellesh/" target="_blank">hackster.io</a>
 
-    <br/>
+{% assign projects = site.projects | reverse %}
 
-    <span class="date">{{ project.date | date_to_string }}</span>
-  </p>
-{% endfor %}
+<div class='column-container'>
+  <div class='column'>
+    {% for project in projects %}
+      {% assign odd = forloop.index | modulo: 2 %}
+      {% if odd != 0 %}
+        {% include post-summary.html content=project %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class='column'>
+    {% for project in projects %}
+      {% assign odd = forloop.index | modulo: 2 %}
+      {% if odd == 0 %}
+        {% include post-summary.html content=project %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
