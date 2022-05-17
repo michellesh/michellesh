@@ -1,0 +1,16 @@
+---
+title: Projects
+permalink: /projects/
+---
+<h1>Projects</h1>
+
+{% for project in site.projects %}
+  <p>
+    <a href="{{ project.url | relative_url }}"><strong>{{ project.title }}</strong></a> -
+    {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
+
+    <br/>
+
+    <span class="date">{{ project.date | date_to_string }}</span>
+  </p>
+{% endfor %}

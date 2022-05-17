@@ -1,6 +1,8 @@
 collections:
   installations:
     output: true
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -11,10 +13,10 @@ defaults:
       permalink: /installations/:path
   - scope:
       path: ""
-      type: "posts"
+      type: "projects"
     values:
-      layout: "post"
-      permalink: /:categories/:year/:month/:day/:title
+      layout: "project"
+      permalink: /projects/:title
   - scope:
       path: ""
     values:
