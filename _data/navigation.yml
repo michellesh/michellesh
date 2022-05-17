@@ -1,6 +1,6 @@
 - name: Hello!
   link: /
-- name: Projects
-  link: /projects/
+- name: Installations
+  link: /installations/
 - name: Blog
   link: /blog/

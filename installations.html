@@ -1,0 +1,38 @@
+---
+title: Installations
+permalink: /installations/
+---
+<h1>Installations</h1>
+
+{% for installation in site.installations %}
+  <div class="installation">
+    <a href="{{ installation.url | relative_url }}">
+      <strong>{{ installation.name }}</strong>
+    </a>
+    -
+
+    {% if installation.year %}
+      <span class="date">{{ installation.year }}</span>
+      -
+    {% endif %}
+
+    {{ installation.excerpt | truncatewords: 20, ' ...' | remove: '<p>' | remove: '</p>' }}
+
+    <a href="{{ installation.url | relative_url }}">read more!</a>
+
+    {% if installation.main-image %}
+      {% assign filename = installation.image-dir | append: installation.main-image %}
+      <div>
+        <a href="{{ installation.url | relative_url }}">
+          <img class="fit-image column-img" src="{{ filename | relative_url }}" />
+        </a>
+        {% if installation.main-image-by %}
+          <div class="photo-by">
+            ^ photo by
+            <a href="{{ installation.main-image-by-url }}">{{ installation.main-image-by }}</a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
