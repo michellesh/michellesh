@@ -19,7 +19,7 @@ images:
 
 ## Inspiration
 
-I got this idea from [SparkFun](https://www.sparkfun.com/news/3975){:target="blank"}! Ever since I saw [their blog post](https://www.sparkfun.com/news/3975){:target="blank"} I have been excited to make one of these, and I also really wanted to make a D&D themed gift for a friend! Then when I came up with the idea to whittle the base platform, I immediately ordered parts! Thank you SparkFun for the inspiration. Also fun fact, I think this is the first project I've ever made that doesn't have any code or a board!
+I got this idea from [SparkFun](https://www.sparkfun.com/news/3975){:target="blank"} and [@thingsrobmade](https://mobile.twitter.com/thingsrobmade){:target="blank"}! Ever since I saw [their blog post](https://www.sparkfun.com/news/3975){:target="blank"} I have been excited to make one of these, and I also really wanted to make a D&D themed gift for a friend! Then when I came up with the idea to whittle the base platform, I immediately ordered parts! Thank you SparkFun for the inspiration. Also fun fact, I think this is the first project I've ever made that doesn't have any code or a board!
 
 ## Parts/Equipment
 
