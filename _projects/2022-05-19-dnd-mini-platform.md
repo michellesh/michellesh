@@ -2,7 +2,7 @@
 layout: post
 title: D&D Mini Platform
 main-image-url: /assets/images/dnd-mini-platform/platform.jpg
-excerpt: A platform for displaying a D&D mini. Placing the mini onto the platform causes the two tiny flames to light up and flicker!
+excerpt: A platform for displaying a D&D mini. Placing the mini onto the platform makes the two tiny flames light up and flicker!
 images:
   base: /assets/images/dnd-mini-platform/base.jpg
   circuit: /assets/images/dnd-mini-platform/circuit.jpg
@@ -75,7 +75,7 @@ All of the components are hot glued directly to the wood, except for the battery
 
 This video shows about 30 seconds of scraping off hot glue bits with an exacto knife, and another minute of soldering. This was probably one of my favorite steps in the whole project, although it's hard to compare because this entire project was such a delight.
 
-Funny moment at 1:07 in the video: I was trying ot use a magnet to hold a wire down, but my soldering iron got stuck to the magnet and surprised me!
+Funny moment at 1:07 in the video: I was trying to use a magnet to hold a wire down, but my soldering iron got stuck to the magnet and surprised me!
 
 <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/711755611?h=b5094bb392&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Clean and Solder Platform.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
