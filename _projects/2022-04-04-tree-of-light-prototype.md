@@ -16,7 +16,10 @@ images:
   soldering-glueing-2: /assets/images/tree-of-light-prototype/soldering-glueing-2.jpg
   prototype-lit-up-2: /assets/images/tree-of-light-prototype/prototype-lit-up-2.jpg
   prototype-lit-up-1: /assets/images/tree-of-light-prototype/prototype-lit-up-1.jpg
+  radial-gradient: /assets/images/tree-of-light-prototype/tree-of-light-radial-gradient.jpg
 ---
+
+![Tree of light radial gradient]({{ page.images.radial-gradient | relative_url }}){:class="fit-image"}
 
 ## What's it for?
 
