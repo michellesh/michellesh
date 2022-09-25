@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tree of Light Prototype
-main-image-url: /assets/images/tree-of-light-prototype/prototype-lit-up-2.jpg
+main-image-url: /assets/images/tree-of-light-prototype/tree-of-light-radial-gradient.jpg
 excerpt: A 4-foot tall prototype for a larger LED structure we're building this year that we're calling the "Tree of Light". This post is about my process of adding LEDs to it!
 images:
   prototype-without-leds: /assets/images/tree-of-light-prototype/prototype-without-leds.jpg
@@ -200,9 +200,5 @@ void loop() {
 This post is meant to be about the build, not the light patterns. I will be developing a lot more light patterns for this thing! But if you read this far down this post, then I love you. And you probably want to see this thing do something cool! So here's a nice simple one.
 
 <iframe class="fit-image" src="https://www.youtube.com/embed/wcQRBgSsLoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## What's next?
-
-More light patterns for this thing! More code! Stay tuned!
 
 -Micky
