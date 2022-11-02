@@ -62,7 +62,7 @@ A potted snake plant with twinkling leaves of yarn. This plant doesn't even need
 - [Collect rocks from the front yard](#collect-rocks-from-the-front-yard)
 - [Drill a hole in a rock!](#drill-a-hole-in-a-rock)
 - [Wiring and board enclosure](#wiring-and-board-enclosure)
-- [Schematic](#schematic)
+  - [Schematic](#schematic)
 - [Code](#code)
 - [Video](#video)
 
@@ -164,7 +164,7 @@ I made this little enclosure out of a plastic case I had lying around to protect
 ![Board wiring enclosure]({{ page.images.board-enclosure | relative_url }}){:class="fit-image"}
 
 
-### Schematic
+#### Schematic
 
 I think this schematic looks more complicated than it actually is. There's just a lot of wires, and I got carried away with the lines and right angles.
 
