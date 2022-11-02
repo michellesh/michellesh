@@ -7,22 +7,19 @@ permalink: /projects/
 Showcase for smaller scale projects! I also post these on <a href="https://www.hackster.io/michellesh/" target="_blank">hackster.io</a>
 
 {% assign projects = site.projects | reverse %}
+{% assign num-rows = projects.size | divided_by: 2 | ceil %}
 
-<div class='column-container'>
-  <div class='column'>
-    {% for project in projects %}
-      {% assign odd = forloop.index | modulo: 2 %}
-      {% if odd != 0 %}
-        {% include post-summary.html content=project %}
-      {% endif %}
-    {% endfor %}
+{% for i in (0..num-rows) %}
+  <div class='column-container'>
+    {% assign index = i | times: 2 %}
+    {% assign project = projects[index] %}
+    <div class='column'>
+      {% include post-summary.html content=project %}
+    </div>
+    {% assign index = i | times: 2 | plus: 1 %}
+    {% assign project = projects[index] %}
+    <div class='column'>
+      {% include post-summary.html content=project %}
+    </div>
   </div>
-  <div class='column'>
-    {% for project in projects %}
-      {% assign odd = forloop.index | modulo: 2 %}
-      {% if odd == 0 %}
-        {% include post-summary.html content=project %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+{% endfor %}
