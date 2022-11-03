@@ -29,6 +29,8 @@ images:
 
 A potted snake plant with twinkling leaves of yarn. This plant doesn't even need to be watered!
 
+This piece is inspired by buying a house. I want to equip every room with LEDs, both practical and decorative. I decided to start with a house plant.
+
 
 ## Materials & Tools
 
@@ -69,7 +71,7 @@ A potted snake plant with twinkling leaves of yarn. This plant doesn't even need
 
 ### Design
 
-Each leaf is made of 1/8" steel rod, welded together into wonky leaf shapes, with LED strips running along the inside edges and yarn wrapped around each side.
+Each leaf is made of 1/8" steel rod, welded together into wonky leaf shapes, with LED strips running along the inside edges and yarn wrapped around each side. Here are some sketches I made before I started building.
 
 <div class="column-container">
   <div class="p column">
@@ -97,7 +99,7 @@ I've been wanting to try using string as a method of diffusing LEDs for a while.
 
 ### Weld rods into wonky leaf shapes
 
-After bending the rods into wonky leaf shapes, (using photos of snake plants as reference) I welded them together with little segments of rod. This was my first time welding, and it was the perfect level of difficulty for a first-time welder.
+After bending the rods into wonky leaf shapes, (using photos of snake plants as reference,) I welded them together with little segments of rod. This was my first time welding, and it felt like the perfect level of difficulty for a first-time welder.
 
 ![Welding process]({{ page.images.welding-process | relative_url }}){:class="fit-image"}
 <div class="column-container">
@@ -114,7 +116,7 @@ After bending the rods into wonky leaf shapes, (using photos of snake plants as 
 
 ### Wrap yarn around both sides of each leaf
 
-Just wrapped it round and round! It took about 4 hours per leaf. Every time I switched from light green to dark green, I wrapped the yarn once around the LED strip to hold it tight to the outer rod, and also to hide the knot inside the leaf (shown in first photo).
+Just wrapped it round and round! It took about 4 hours per leaf. Every time I switched colors, I wrapped the yarn once around the LED strip to hold it tight to the outer rod, and also to hide the knot inside the leaf (shown in first photo).
 
 <div class="column-container">
   <div class="p column">
