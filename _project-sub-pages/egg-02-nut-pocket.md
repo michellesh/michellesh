@@ -3,7 +3,7 @@ title: Design a nut pocket
 summary: A way to hold two 3D-printed parts together
 project: egg
 permalink: /projects/egg/nut-pocket
-image-url: /assets/images/egg/nut-pocket-diagram.jpg
+image-url: /assets/images/egg/nut-pocket-prototype-3d-printed.jpg
 images:
   nut-bolt-measurements-1: /assets/images/egg/nut-bolt-measurements-1.jpg
   nut-bolt-measurements-2: /assets/images/egg/nut-bolt-measurements-2.jpg
