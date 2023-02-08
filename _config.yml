@@ -3,6 +3,8 @@ collections:
     output: true
   projects:
     output: true
+  project-sub-pages:
+    output: true
 
 defaults:
   - scope:
@@ -16,6 +18,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+      permalink: /projects/:title
+  - scope:
+      path: ""
+      type: "project-sub-pages"
+    values:
+      layout: "project-sub-page"
       permalink: /projects/:title
   - scope:
       path: ""
