@@ -1,0 +1,26 @@
+---
+title: Posts
+permalink: /posts/
+---
+<style>
+.posts {
+  margin-top: 5em;
+}
+p {
+  margin-top: 1em;
+}
+</style>
+
+<h1>Posts</h1>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    {% if post.last-updated %}
+      <div class="date">Last Updated {{ post.last-updated | date: "%B %Y" }}</div>
+    {% else %}
+      <div class="date">Posted {{ post.date | date: "%B %Y" }}</div>
+    {% endif %}
+    <div>{{ post.excerpt | truncatewords: 20, ' ...' }}</div>
+  {% endfor %}
+</div>

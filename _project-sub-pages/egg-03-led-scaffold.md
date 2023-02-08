@@ -7,7 +7,7 @@ image-url: /assets/images/egg/blender-scaffold.png
 images:
   blender-simple-square: /assets/images/egg/blender-simple-square.png
   blender-vertical-spacing: /assets/images/egg/blender-vertical-spacing.png
-  3d-printed-assembled-scaffold: /assets/images/egg/3d-printed-assembled-scaffold.jpg
+  printed-assembled-scaffold: /assets/images/egg/printed-assembled-scaffold.jpg
   blender-radius-z-index: /assets/images/egg/blender-radius-z-index.png
 ---
 
@@ -101,7 +101,7 @@ words
 
 ## 3D print and assemble
 
-![3D printed assembled scaffold]({{ page.images.3d-printed-assembled-scaffold | relative_url }}){:class="fit-image"}
+![3D printed assembled scaffold]({{ page.images.printed-assembled-scaffold | relative_url }}){:class="fit-image"}
 
 
 More words coming soon :)

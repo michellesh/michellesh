@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tree of Light Prototype
 main-image-url: /assets/images/tree-of-light-prototype/tree-of-light-radial-gradient.jpg
 excerpt: A 4-foot tall prototype for a larger LED structure we're building this year that we're calling the "Tree of Light". This post is about my process of adding LEDs to it!

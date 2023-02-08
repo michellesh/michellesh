@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Snake Plant
 main-image-url: /assets/images/snake-plant/thumbnail.png
 excerpt: A potted snake plant with twinkling leaves of yarn.

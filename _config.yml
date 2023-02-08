@@ -5,6 +5,8 @@ collections:
     output: true
   project-sub-pages:
     output: true
+  posts:
+    output: true
 
 defaults:
   - scope:
@@ -25,6 +27,12 @@ defaults:
     values:
       layout: "project-sub-page"
       permalink: /projects/:title
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title
   - scope:
       path: ""
     values:
