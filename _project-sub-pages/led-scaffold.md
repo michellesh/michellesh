@@ -6,4 +6,4 @@ permalink: /projects/egg/led-scaffold
 image-url: /assets/images/egg/blender-scaffold.png
 ---
 
-words words words
+More words coming soon :)

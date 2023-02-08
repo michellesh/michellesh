@@ -31,3 +31,5 @@ images:
 
 
 ![Nut pocket prototype 3D printed]({{ page.images.nut-pocket-prototype-3d-printed | relative_url }}){:class="fit-image"}
+
+More words coming soon :)
