@@ -68,4 +68,4 @@ void loop() {
 }
 ```
 
-Sources used: [geekering.com article](https://www.geekering.com/categories/embedded-sytems/esp8266/joaotarquinio/how-to-use-rotary-encoders-with-esp8266/)
+Sources used: [geekering.com article](https://www.geekering.com/categories/embedded-sytems/esp8266/joaotarquinio/how-to-use-rotary-encoders-with-esp8266/){:target="blank"}
