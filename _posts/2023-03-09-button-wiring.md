@@ -3,6 +3,7 @@ title: Wiring a button with 2 or 4 pins on an ESP32
 last-updated: 2023-03-09
 images:
   button-wiring-schematic: /assets/images/posts/button-wiring-schematic.jpg
+  button-wiring-soldered: /assets/images/posts/button-wiring-soldered.jpg
 ---
 
 How I wire a button with either 2 or 4 pins with ESP32 boards.
@@ -19,6 +20,11 @@ How I wire a button with either 2 or 4 pins with ESP32 boards.
 This example uses the D25 pin to power the button, but you can also use the 3.3V pin instead.
 
 ![Button wiring schematic]({{ page.images.button-wiring-schematic | relative_url }}){:class="fit-image"}
+
+
+### Wiring
+
+![Button wiring soldered]({{ page.images.button-wiring-soldered | relative_url }}){:class="fit-image"}
 
 
 ### Code
