@@ -3,7 +3,7 @@ title: Rotary encoder with ESP8266 wiring and code
 last-updated: 2023-02-21
 ---
 
-How I wire a rotary encoder with an ESP8266 and basic code to read the rotation angle and button press.
+How I wire a rotary encoder with an ESP8266 and basic code to read the rotation angle and the button press.
 
 ### Parts
 - [ESP8266](https://www.amazon.com/gp/product/B081CSJV2V/ref=ppx_yo_dt_b_search_asin_title?&_encoding=UTF8&tag=ladyoflightio-20&linkCode=ur2&linkId=0a102a013ba2bb4963f88cfc981c6f0a&camp=1789&creative=9325){:target="blank"}

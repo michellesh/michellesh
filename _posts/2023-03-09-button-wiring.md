@@ -6,7 +6,7 @@ images:
   button-wiring-soldered: /assets/images/posts/button-wiring-soldered.jpg
 ---
 
-How I wire a button with either 2 or 4 pins with ESP32 boards.
+How I wire a button with either 2 or 4 pins with ESP32 boards. (This works with an ESP8266 too.)
 
 ### Parts
 
