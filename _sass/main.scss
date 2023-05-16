@@ -147,7 +147,7 @@ code {
 /* Sticky footer!
  * Thank you: https://css-tricks.com/couple-takes-sticky-footer/
  */
-$footerHeight: 6em;
+$footerHeight: 9em;
 
 html, body {
   height: 100%;
@@ -171,4 +171,8 @@ html, body {
 .footer img {
   opacity: 0.5;
   padding: 0 0.5em;
+}
+
+.footer-mailing-list {
+  margin: 2em;
 }
