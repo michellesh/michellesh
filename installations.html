@@ -24,7 +24,11 @@ permalink: /installations/
       {% assign filename = installation.image-dir | append: installation.main-image %}
       <div>
         <a href="{{ installation.url | relative_url }}">
-          <img class="fit-image column-img" src="{{ filename | relative_url }}" />
+          <img
+            class="fit-image column-img easeload"
+            onload="this.style.opacity=1"
+            src="{{ filename | relative_url }}"
+          />
         </a>
         {% if installation.main-image-by %}
           <div class="photo-by">

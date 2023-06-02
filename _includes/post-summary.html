@@ -4,7 +4,11 @@
   <p>
     {% if post.main-image-url %}
       <a href="{{ post.url | relative_url }}">
-        <img class="fit-image column-img" src="{{ post.main-image-url | relative_url }}" />
+        <img
+          class="fit-image column-img easeload"
+          onload="this.style.opacity=1"
+          src="{{ post.main-image-url | relative_url }}"
+        />
       </a>
     {% endif %}
 

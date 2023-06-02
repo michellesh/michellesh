@@ -18,7 +18,8 @@ layout: default
       {% for image in column-images %}
         {% assign filename = page.image-dir | append: image.filename %}
         <img
-          class="fit-image column-img"
+          class="fit-image column-img easeload"
+          onload="this.style.opacity=1"
           title="{{ image.title }}"
           src="{{ filename | relative_url }}"
         />
