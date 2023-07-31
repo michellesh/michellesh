@@ -8,3 +8,7 @@ _deleted-posts
 assets/.DS_Store
 
 _config_dev.yml
+
+node_modules
+package-lock.json
+package.json

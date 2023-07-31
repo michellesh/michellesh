@@ -2,18 +2,22 @@
 title: Posts
 permalink: /posts/
 ---
+
 <style>
-.posts {
-  margin-top: 4em;
-}
-p {
-  margin-top: 1em;
-}
+  .posts {
+    margin-top: 4em;
+  }
+  p {
+    margin-top: 1em;
+  }
 </style>
 
 <h1>Posts</h1>
 
-These are notes and short how-to's that I reference all the time. Maybe they are useful for someone else too!
+<p>
+  These are notes and short how-to's that I reference all the time. Maybe they
+  are useful for someone else too!
+</p>
 
 <div class="posts">
   {% for post in site.posts %}
@@ -23,6 +27,6 @@ These are notes and short how-to's that I reference all the time. Maybe they are
     {% else %}
       <div class="date">Posted {{ post.date | date: "%B %Y" }}</div>
     {% endif %}
-    <div>{{ post.excerpt | truncatewords: 20, ' ...' }}</div>
+    <div>{{ post.excerpt | truncatewords: 30, ' ...' }}</div>
   {% endfor %}
 </div>
