@@ -61,7 +61,21 @@ A miniature 3D printed bonsai tree embedded with LEDs under a canopy of pom-poms
 
 ## Process
 
-### Bonsai tree model STL file
+- [Bonsai tree 3D model from Thingiverse](#bonsai-tree-3d-model-from-thingiverse)
+- [Remix 3D model](#remix-3d-model)
+- [Design custom supports in Blender](#design-custom-supports-in-blender)
+- [Slice & 3D print](#slice--3d-print)
+- [Spray paint](#spray-paint)
+- [Fill tree with LEDs](#fill-tree-with-leds)
+- [Router wood base](#router-wood-base)
+- [3D print box with lid for components](#3d-print-box-with-lid-for-components)
+- [Solder](#solder)
+  - [Schematic](#schematic)
+- [Make pompoms](#make-pompoms)
+- [Code](#code)
+
+
+### Bonsai tree 3D model from Thingiverse
 
 I started out with [this lovely 3D model I found on Thingiverse](https://www.thingiverse.com/thing:4745213):
 
@@ -183,7 +197,7 @@ For this design, I printed a base box and lid separately. This was before I knew
 I designed this box and lid so that it can be printed without supports. [You can get the STLs here](https://github.com/michellesh/bonsai-tree/tree/main/stl){:target="blank"}.
 
 
-### Soldering
+### Solder
 
 Before soldering, don't forget to:
 - Label the power and ground wires coming out of the tree. Once the tree is glued down, you won't be able to see the ground indicator on the LED. (I forgot so many times. Luckily, you can measure the resistance between each of the three wires with a multimeter and figure out which is which.)
