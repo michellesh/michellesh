@@ -145,12 +145,12 @@ This print used 28g filament ($0.56) and took 9hr 24min to print.
 
 ### Spray paint
 
-I bought a custom clear and gold blended spray paint from an automotive paint supplier. It's super shiny and sparkly but since it's clear it needs an opaque base coat to really stand out. For the base coat I used an opaque gold:
+I bought a custom clear and gold blended spray paint from an automotive paint supplier. It's super shiny and sparkly but since it's clear it needs an opaque base coat to really stand out. For the base coat I used an opaque gold.
 
 <div class="column-container">
   <div class="p column">
     {% include image.html url=page.images.spray-painted-tree-1 %}
-    Base coat: Standard gold spray paint. (A little shiny, but not shiny enough.)
+    Base coat: <a href="https://www.lowes.com/pd/Krylon-FUSION-ALL-IN-ONE-Gloss-Gold-Metallic-Spray-Paint-and-Primer-In-One-Actual-Net-Contents-12-oz/1000460263" target="_blank">Standard gold spray paint</a>. (A little shiny, but not shiny enough.)
   </div>
   <div class="p column">
     {% include image.html url=page.images.spray-painted-tree-2 %}
