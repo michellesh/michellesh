@@ -28,13 +28,12 @@ images:
   tree-portrait-red: /assets/images/bonsai-tree/tree-portrait-red.jpg
   tree-portrait-teal: /assets/images/bonsai-tree/tree-portrait-teal.jpg
   tree-portrait-yellow: /assets/images/bonsai-tree/tree-portrait-yellow.jpg
-  twinkle-short: /assets/images/bonsai-tree/twinkle-short.gif
-  twinkle: /assets/images/bonsai-tree/twinkle.gif
   wiring: /assets/images/bonsai-tree/wiring.jpg
   wood-bases: /assets/images/bonsai-tree/wood-bases.jpg
+  twinkle-giphy-capture-low: /assets/images/bonsai-tree/twinkle-giphy-capture-low.gif
 ---
 
-{% include image.html url=page.images.twinkle-short %}
+{% include image.html url=page.images.twinkle-giphy-capture-low %}
 
 A miniature 3D printed bonsai tree embedded with LEDs under a canopy of pom-poms. Inspired by Dr. Seuss.
 
@@ -265,6 +264,7 @@ I learned how to make mini pompoms out of yarn using a fork [from this YouTube v
   </div>
 </div>
 
-{% include image.html url=page.images.twinkle %}
+{% include image.html url=page.images.twinkle-giphy-capture-low %}
+
 
 Thanks for reading!
