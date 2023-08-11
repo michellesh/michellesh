@@ -6,6 +6,7 @@ images:
   blender-screenshot-esp32-mount: /assets/images/rainbow-clock/blender-screenshot-esp32-mount.png
   blender-screenshot-hingebox: /assets/images/rainbow-clock/blender-screenshot-hingebox.png
   blender-screenshot-latch-measurements: /assets/images/rainbow-clock/blender-screenshot-latch-measurements.png
+  cura-screenshot: /assets/images/rainbow-clock/cura-screenshot.png
   esp32-mount: /assets/images/rainbow-clock/esp32-mount.jpg
   led-layout-subgrid-bottom: /assets/images/rainbow-clock/led-layout-subgrid-1.jpg
   led-layout-subgrid-middle: /assets/images/rainbow-clock/led-layout-subgrid-3.jpg
@@ -87,7 +88,9 @@ This was the first time I'd tried this method of mounting boards. Previously I w
 
 You can find all the [STL files here.](https://github.com/michellesh/rainbow-clock/tree/main/stl){:target="blank"}
 
-<div>I had these two custom settings in the slicer, but I think these are personal preference:</div>
+{% include image.html url=page.images.cura-screenshot %}
+
+<div>I had these two settings customized in Cura, but I think these are personal preference:</div>
 - Infill density: 0
 - Support Z Distance: 0.4
 

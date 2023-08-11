@@ -87,7 +87,9 @@ I used Blender to make some changes to the 3D model:
 
 {% include image.html url=page.images.blender-screenshot-tree %}
 
-1. **Applied a remesh** to reduce the geometry complexity. The results of this were:
+Changes I made to the model:
+
+1. **Applied a remesh** to reduce the geometry complexity. Here's what happened:
   - Made Blender run faster on my outdated Macbook.
   - Lost the pointier branches, but those will be hidden by pompoms anyway.
   - Lost the bark texture, but this tree doesn't need to look real.
@@ -98,7 +100,7 @@ I used Blender to make some changes to the 3D model:
 
 ### Design custom supports in Blender
 
-The 3D printing slicer software (Cura) will auto-generate supports, but it looked like too many supports to me... (it also tripled the amount of filament compared to the tree alone!) Designing my own sounded way more fun anyway. I designed them in Blender using the Wireframe modifier. They worked beautifully. I think you can also do stuff like this with Meshmixer, which doesn't seem available for Mac users.
+The 3D printing slicer software (Cura) auto-generates supports, but they seemed excessive... it also tripled the amount of filament compared to the tree alone! Designing my own supports sounded way more fun anyway. I designed them in Blender using the Wireframe modifier. They worked beautifully. I think you can also do stuff like this with Meshmixer, which doesn't seem available for Mac users.
 
 [You can get the STLs here](https://github.com/michellesh/bonsai-tree/tree/main/stl){:target="blank"}
 
@@ -114,8 +116,8 @@ How I made these custom lattice supports in Blender:
       <li>Pop the duplicated vertices to a separate object (<code>p</code>)</li>
       <li>Extrude them down to align with the bottom of tree (<code>e</code>)</li>
       <li>Select the bottom vertices, make them all flat at z=0 (<code>s z 0</code>)</li>
-      <li>Now you have a column (Image 2). Loop cut the column 20x (<code>ctrl-r 20</code>)</li>
-      <li>Edit mode the column, move vertices that intersect the tree out of the way of the tree</li>
+      <li>Now you have a column (Image 2). In edit mode, loop cut the column 10-20x (<code>ctrl-r 10</code>)</li>
+      <li>Move vertices that intersect the tree out of the way of the tree</li>
       <li>Apply <b>Wireframe</b> modifier, thickness 1mm / offset -1</li>
       <li>Make a skirt for the lattice to increase build plate adhesion</li>
     </ul>
@@ -144,7 +146,7 @@ This print used 28g filament ($0.56) and took 9hr 24min to print.
 
 ### Spray paint
 
-I bought a custom clear and gold blended spray paint from an automotive paint supplier. It's super shiny and sparkly but since it's clear it needs an opaque base coat to really stand out. For the base coat I used an opaque gold.
+I bought a custom clear and gold spray paint blend from an automotive paint supplier. It's super shiny and sparkly but since it's clear it needs an opaque base coat to really stand out. For the base coat I used an opaque gold.
 
 <div class="column-container">
   <div class="p column">
@@ -200,7 +202,7 @@ I designed this box and lid so that it can be printed without supports. [You can
 
 Before soldering, don't forget to:
 - Label the power and ground wires coming out of the tree. Once the tree is glued down, you won't be able to see the ground indicator on the LED. (I forgot so many times. Luckily, you can measure the resistance between each of the three wires with a multimeter and figure out which is which.)
-- Sand the wire insulation. Because these are fairy lights, the wires have a thin coating of insulation, and it's a drag to sand it off and always takes longer than I want.
+- Sand the wire insulation. Because these are fairy lights, the wires have a thin coating of insulation.
 
 {% include image.html url=page.images.wiring %}
 
@@ -241,10 +243,22 @@ I learned how to make mini pompoms out of yarn using a fork [from this YouTube v
 
 ### Code
 
-[Github repository](https://github.com/michellesh/bonsai-tree){:target="blank"}
+The LEDs have two modes: solid color and twinkle. The button on the bottom of the tree changes the mode. Both modes slowly cycle through several color palettes.
 
+The twinkle mode code is adapted from [FastLED's TwinkleFox](https://github.com/FastLED/FastLED/blob/master/examples/TwinkleFox/TwinkleFox.ino){:target="blank"} algorithm.
 
+In solid color mode, the color slowly transitions between colors in the active color palette. If you imagine a color palette as a spectrum, the color being displayed oscillates between each side of the spectrum with a sine wave:
 
+```cpp
+void solidColorFade() {
+  int paletteIndex = beatsin8(10, 0, MAX_PALETTE_INDEX);
+  for (int i = 0; i < NUM_LEDS; i++) {
+    leds[i] = palette.getColorFromPalette(paletteIndex);
+  }
+}
+```
+
+[Read all the code on Github](https://github.com/michellesh/bonsai-tree){:target="blank"}
 
 <div class="column-container">
   <div class="p column">
