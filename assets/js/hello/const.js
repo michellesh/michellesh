@@ -1,11 +1,11 @@
-const DARK_PURPLE = '#691CBA';
-const LIGHT_PURPLE = '#D9C7ED';
-const DARK_BLUE = '#075EAA';
-const LIGHT_BLUE = '#4FD4F3';
-const DARK_GREEN = '#398335';
-const LIGHT_GREEN = '#A8D899';
-const DARK_COLORS = [DARK_BLUE, DARK_GREEN, DARK_PURPLE];
-const LIGHT_COLORS = [LIGHT_BLUE, LIGHT_GREEN, LIGHT_PURPLE];
+const BLUE_GREEN = '#1E6A7F';
+const SAGE = '#789F97';
+const DARK_SAGE = '#4B5E53';
+const MUSTARD = '#9f8a2d';
+const WHITE = '#EAE7E5';
+
+const DARK_YELLOW = '#D0BA58';
+const LIGHT_YELLOW = '#EDE0A6';
 
 const HELLO_NODES = [
   { x: 427, y: 149 },

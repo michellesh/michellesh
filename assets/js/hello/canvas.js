@@ -1,5 +1,5 @@
 const WIDTH = 650;
-const HEIGHT = 200;
+const HEIGHT = 100;
 
 const div = document.getElementById('d3-vis');
 const canvas = document.createElement('canvas');
@@ -7,17 +7,18 @@ canvas.width = WIDTH;
 canvas.height = HEIGHT;
 div.appendChild(canvas);
 
-const SCALE = 0.8;
-const TOP = 130;
-const MIN_RADIUS = 3;
-const MAX_RADIUS = 5;
+const SCALE = 0.5;
+const TOP = 105;
+const LEFT = 975;
+const MIN_RADIUS = 2;
+const MAX_RADIUS = 4;
 const NUM_NODES = HELLO_NODES.length * 6;
 const unscaled = x => x / SCALE;
 
 const colorScale = d3
   .scaleLinear()
   .domain([0, NUM_NODES])
-  .range([DARK_BLUE, LIGHT_GREEN]);
+  .range([BLUE_GREEN, SAGE]);
 
 const minX = Math.min(...HELLO_NODES.map(n => n.x));
 const minY = Math.min(...HELLO_NODES.map(n => n.y));
@@ -42,7 +43,7 @@ const onPointerMove = event => {
 };
 
 const forces = {
-  center: ({ width = 0 } = {}) => d3.forceCenter(WIDTH / (2 * SCALE), TOP),
+  center: ({ width = 0 } = {}) => d3.forceCenter(LEFT, TOP),
   charge: ({ strength = -15 } = {}) =>
     d3.forceManyBody().strength(d => (d.isPointer ? strength : 0)),
   collide: () => d3.forceCollide().radius(d => d.r / 2),
@@ -62,7 +63,7 @@ const forceSimulation = Object.keys(forces).reduce(
   (simulation, f) => simulation.force(f, forces[f]()),
   d3
     .forceSimulation([pointerNode, ...nodes])
-    .alphaTarget(0.3)
+    .alphaTarget(1)
     .velocityDecay(0.1)
 );
 
