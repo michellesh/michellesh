@@ -1,10 +1,9 @@
 ---
 title: Hello!
 ---
-<div id="hello"></div>
 
-<script src="{{ '/assets/js/hello/const.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/hello/canvas.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/spark/const.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/spark/canvas.js' | relative_url }}"></script>
 
 Hello! I'm Michelle! People also call me Micky.
 

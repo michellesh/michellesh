@@ -1,8 +1,11 @@
 <nav>
-  <strong>Micky Makes</strong>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link | relative_url }}">
-      {{ item.name }}
-    </a>
-  {% endfor %}
+  <div id="d3-vis"></div>
+  <div class="mickymakes-title">Micky Makes</div>
+  <div class="nav-links">
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link | relative_url }}">
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </div>
 </nav>

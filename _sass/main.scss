@@ -1,16 +1,16 @@
-// green & tan
-//$base-color: #649466;
-//$secondary-color: #b5ad9b;
-
-// blue & tan
-$base-color: #809BBF;
-$secondary-color: #bc935c;
-$tan: #f3eee7;
+$blue-green: #1E6A7F;
+$sage: #789F97;
+$dark-sage: #4B5E53;
+$mustard: #9f8a2d;
+$white: #EAE7E5;
 
 $code-block: #f8f8f8;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  letter-spacing: .05rem;
+  font-size: .9rem;
+  background: $white;
 }
 
 .easeload {
@@ -36,10 +36,36 @@ iframe {
 
 nav {
   padding: 2em 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8rem;
+  letter-spacing: .15rem;
 }
 
-nav a, nav strong {
-  margin-right: 1em;
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mickymakes-title {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: $blue-green;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  background: $blue-green;
+  padding: 2rem;
+  color: $white;
+  font-size: 1rem;
+}
+
+h2, h3, h4, h5 {
+  color: $blue-green;
 }
 
 h2 {
@@ -51,8 +77,35 @@ h3 {
 }
 
 a {
-  color: $base-color;
+  color: $sage;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: $dark-sage;
+}
+
+.nav-links a:first-child {
+  padding: 10px 10px 10px 0;
+}
+.nav-links a {
+  padding: 10px;
+}
+.nav-links a:last-child {
+  padding: 10px 0 10px 10px;
+}
+.nav-links a:hover {
+  animation: wobble .9s ease;
+}
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-5%); }
+  30% { transform: translateX(4%); }
+  45% { transform: translateX(-3%); }
+  60% { transform: translateX(2%); }
+  75% { transform: translateX(-1%); }
+  100% { transform: translateX(0%); }
 }
 
 p, li, td, .p {
@@ -74,7 +127,7 @@ td, th {
 }
 
 th {
-  border-bottom: 1px solid $base-color;
+  border-bottom: 1px solid $sage;
 }
 
 pre {
@@ -95,7 +148,7 @@ code {
 }
 
 .highlighted {
-  background-color: $tan;
+  background-color: $mustard;
   border-radius: 6px;
   padding: 0.1em 0.2em;
 }
@@ -108,7 +161,7 @@ code {
 .date {
   font-weight: normal;
   font-style: italic;
-  color: $secondary-color;
+  color: $mustard;
 }
 
 .fit-image {
@@ -148,8 +201,11 @@ code {
   margin-bottom: 0.3em;
 }
 
-#hello {
+#d3-vis {
   text-align: center;
+  background-image: url("/assets/images/logo.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
 }
 
 /* Sticky footer!

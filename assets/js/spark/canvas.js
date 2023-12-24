@@ -1,29 +1,30 @@
 const WIDTH = 650;
-const HEIGHT = 200;
+const HEIGHT = 100;
 
-const div = document.getElementById('d3-vis');
+const helloDiv = document.getElementById('hello');
 const canvas = document.createElement('canvas');
 canvas.width = WIDTH;
 canvas.height = HEIGHT;
-div.appendChild(canvas);
+helloDiv.appendChild(canvas);
 
-const SCALE = 0.8;
-const TOP = 130;
-const MIN_RADIUS = 3;
-const MAX_RADIUS = 5;
-const NUM_NODES = HELLO_NODES.length * 6;
+const SCALE = 1;
+const TOP = 50;
+const LEFT = 375;
+const MIN_RADIUS = 1;
+const MAX_RADIUS = 2;
+const NUM_NODES = SPARK_NODES.length * 300;
 const unscaled = x => x / SCALE;
 
 const colorScale = d3
   .scaleLinear()
   .domain([0, NUM_NODES])
-  .range([DARK_BLUE, LIGHT_GREEN]);
+  .range([DARK_YELLOW, LIGHT_YELLOW]);
 
-const minX = Math.min(...HELLO_NODES.map(n => n.x));
-const minY = Math.min(...HELLO_NODES.map(n => n.y));
+const minX = Math.min(...SPARK_NODES.map(n => n.x));
+const minY = Math.min(...SPARK_NODES.map(n => n.y));
 
 const nodes = d3.range(NUM_NODES).map(i => {
-  const forceNode = HELLO_NODES[Math.floor(i % HELLO_NODES.length)]
+  const forceNode = SPARK_NODES[Math.floor(i % SPARK_NODES.length)]
   return {
     c: colorScale(Math.random() * NUM_NODES),
     r: MIN_RADIUS + Math.random() * MAX_RADIUS,
@@ -42,19 +43,19 @@ const onPointerMove = event => {
 };
 
 const forces = {
-  center: ({ width = 0 } = {}) => d3.forceCenter(WIDTH / (2 * SCALE), TOP),
-  charge: ({ strength = -15 } = {}) =>
-    d3.forceManyBody().strength(d => (d.isPointer ? strength : 0)),
-  collide: () => d3.forceCollide().radius(d => d.r / 2),
+  //center: ({ width = 0 } = {}) => d3.forceCenter(LEFT, TOP),
+  //charge: ({ strength = -15 } = {}) =>
+  //  d3.forceManyBody().strength(d => (d.isPointer ? strength : 0)),
+  //collide: () => d3.forceCollide().radius(d => d.r / 2),
   x: () =>
     d3
       .forceX()
-      .strength(0.05)
+      //.strength(55)
       .x(d => (d.isPointer ? 0 : d.forceX)),
   y: () =>
     d3
       .forceY()
-      .strength(0.05)
+      //.strength(5)
       .y(d => (d.isPointer ? 0 : d.forceY))
 };
 
@@ -78,8 +79,10 @@ const onTick = context => () => {
   });
 };
 
-const onWindowResize = width =>
-  forceSimulation.force('center', forces.center({ width }));
+//const onWindowResize = width =>
+  //forceSimulation.force('center', forces.center({ width }));
+
+let globalpts = [];
 
 if (canvas.getContext) {
   const context = canvas.getContext('2d');
@@ -87,9 +90,13 @@ if (canvas.getContext) {
   context.scale(SCALE, SCALE);
   forceSimulation.on('tick', onTick(context));
   d3.select(context.canvas)
-    .on('pointermove', onPointerMove)
-    .on('pointerdown', () =>
-      forceSimulation.force('charge', forces.charge({ strength: -55 }))
-    )
-    .on('pointerup', () => forceSimulation.force('charge', forces.charge()));
+    //.on('click', e => {
+    //  globalpts.push({ x: e.x, y: e.y });
+    //  console.log(globalpts);
+    //})
+    //.on('pointermove', onPointerMove)
+    //.on('pointerdown', () =>
+    //  forceSimulation.force('charge', forces.charge({ strength: -55 }))
+    //)
+    //.on('pointerup', () => forceSimulation.force('charge', forces.charge()));
 }
