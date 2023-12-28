@@ -35,7 +35,7 @@ iframe {
 }
 
 nav {
-  padding: 2em 0;
+  padding-bottom: 2em;
   text-transform: uppercase;
   font-weight: bold;
   font-size: .8rem;
@@ -203,7 +203,8 @@ code {
 
 #d3-vis {
   text-align: center;
-  //background-image: url("/assets/images/logo.png");
+  background-image: url("/assets/images/micky-makes.png");
+  background-size: 400px;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
 }

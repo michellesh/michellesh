@@ -1,12 +1,14 @@
 const WIDTH = 650;
 const HEIGHT = 100;
-const SCALE = 0.5;
+const SCALE = 1;
 const TOP = 0;
 const LEFT = 650;
-const MIN_RADIUS = 3;
+const MIN_RADIUS = 2;
 const MAX_RADIUS = 5;
-const NUM_NODES = HELLO_NODES.length * 6;
+const NUM_NODES = MICKY_MAKES_NODES.length * 1;
 const unscaled = x => x / SCALE;
+const MIN_STRENGTH = -5;
+const MAX_STRENGTH = -40;
 
 const div = document.getElementById("d3-vis");
 const canvas = document.createElement("canvas");
@@ -14,17 +16,20 @@ canvas.width = WIDTH;
 canvas.height = HEIGHT;
 div.appendChild(canvas);
 
+const yMin = Math.min(...MICKY_MAKES_NODES.map(n => n.y));
+const yMax = Math.max(...MICKY_MAKES_NODES.map(n => n.y));
+
 const colorScale = d3
   .scaleLinear()
-  .domain([0, NUM_NODES])
-  .range([BLUE_GREEN, SAGE]);
+  .domain([yMin, yMax])
+  .range([SAGE, BLUE_GREEN]);
 
 const pointerNode = { isPointer: true };
 const nodes = d3.range(NUM_NODES).map(i => {
-  const forceNode = HELLO_NODES[Math.floor(i % HELLO_NODES.length)];
+  const forceNode = MICKY_MAKES_NODES[Math.floor(i % MICKY_MAKES_NODES.length)];
   return {
-    c: colorScale(Math.random() * NUM_NODES),
-    r: MIN_RADIUS + Math.random() * MAX_RADIUS,
+    c: colorScale(forceNode.y),
+    r: MIN_RADIUS,
     forceX: forceNode.x,
     forceY: forceNode.y,
     x: WIDTH / 2,
@@ -42,24 +47,26 @@ if (canvas.getContext) {
     .forceSimulation([pointerNode, ...nodes])
     .alphaTarget(1)
     .velocityDecay(0.1)
-    .force("center", d3.forceCenter(LEFT, TOP))
     .force(
       "charge",
-      d3.forceManyBody().strength(d => (d.isPointer ? -15 : 0))
+      d3.forceManyBody().strength(d => (d.isPointer ? MIN_STRENGTH : 0))
     )
-    .force("collide", d3.forceCollide().radius(d => d.r / 2))
+    .force(
+      "collide",
+      d3.forceCollide().radius(d => d.r / 2)
+    )
     .force(
       "x",
       d3
         .forceX()
-        .strength(0.05)
+        .strength(0.2)
         .x(d => (d.isPointer ? 0 : d.forceX))
     )
     .force(
       "y",
       d3
         .forceY()
-        .strength(0.05)
+        .strength(0.2)
         .y(d => (d.isPointer ? 0 : d.forceY))
     )
     .on("tick", () => {
@@ -81,12 +88,16 @@ if (canvas.getContext) {
       pointerNode.fx = x / SCALE;
       pointerNode.fy = y / SCALE;
     })
-    .on("pointerdown", () =>
+    .on("pointerdown", event => {
       forceSimulation.force(
         "charge",
-        d3.forceManyBody().strength(d => (d.isPointer ? -55 : 0))
+        d3.forceManyBody().strength(d => (d.isPointer ? MAX_STRENGTH : 0))
+      );
+    })
+    .on("pointerup", () =>
+      forceSimulation.force(
+        "charge",
+        d3.forceManyBody().strength(d => (d.isPointer ? MIN_STRENGTH : 0))
       )
-    )
-    .on("pointerup", () => forceSimulation.force("charge",
-        d3.forceManyBody().strength(d => (d.isPointer ? -15 : 0))))
+    );
 }
