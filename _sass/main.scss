@@ -168,6 +168,15 @@ code {
   width: 100%;
 }
 
+.page-header {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.header-text-image {
+  height: 40px;
+}
+
 .half-fit-image {
   width: 50%;
 }
@@ -193,7 +202,7 @@ code {
 }
 
 .installation {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   line-height: 1.6;
 }
 

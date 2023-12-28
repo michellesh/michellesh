@@ -2,7 +2,9 @@
 title: Hello!
 ---
 
-Hello! I'm Michelle! People also call me Micky.
+{% include handwritten-header.html url="/assets/images/headers/hello.png" %}
+
+I'm Michelle! People also call me Micky.
 
 I'm a software engineer pursuing creativity. Currently I'm learning about LEDs and posting about it here. I love code and art and combining them. I also like drawing diagrams and soldering.
 
