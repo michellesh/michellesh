@@ -1,4 +1,46 @@
-<nav>
+<script>
+trigger = function () {
+  Slider.classList.toggle("slide-down")
+  //Slider.classList.toggle("slideup")
+};
+</script>
+<style>
+.menu-button {
+  background: #EAE7E5;
+  border: none;
+  padding: 1em;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #789F97;
+  letter-spacing: .08em;
+}
+.mobile-menu {
+  text-align: center;
+  width: 100%;
+  letter-spacing: .08em;
+}
+#menu-content {
+  border-top: 1px solid #789F97;
+  border-bottom: 1px solid #789F97;
+}
+#menu-content a {
+  display: block;
+  font-size: 0.6em;
+  height: 2em;
+  margin-top: 0.8em;
+}
+#Slider #menu-content {
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: auto;
+}
+#Slider.slide-down #menu-content {
+  max-height: 15em;
+  transition: max-height 0.25s ease-in;
+}
+</style>
+
+<nav class="desktop-menu">
   <div id="d3-vis"></div>
 
   <script src="{{ '/assets/js/d3/const.js' | relative_url }}"></script>
@@ -10,5 +52,19 @@
         {{ item.name }}
       </a>
     {% endfor %}
+  </div>
+</nav>
+
+<nav class="mobile-menu">
+  <img style="width:100%;" src="/assets/images/micky-makes.png" />
+  <button onclick="trigger()" class="menu-button">MENU</button>
+  <div id="Slider">
+    <div id="menu-content">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link | relative_url }}">
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </nav>

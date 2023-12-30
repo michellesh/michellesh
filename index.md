@@ -5,17 +5,13 @@ title: Hello!
 
 <style>
 .about-me-img {
-  width: 84%;
   margin-top: 2.5em;
-}
-.right-aligned {
-  text-align: right;
 }
 </style>
 
 
 <div class="column-container">
-  <div class="p column">
+  <div class="p column" style="flex: 1.5; padding-right: 2em;">
 
     {% include handwritten-header.html url="/assets/images/headers/hello.png" %}
 
@@ -29,9 +25,10 @@ title: Hello!
       Check out some of the <a href="/installations">installations</a> I've worked on, or some of my smaller-scale <a href="/projects">projects</a>!
     </p>
   </div>
-  <div class="p column">
-    <div class="right-aligned">
-      <img class="about-me-img card-shadow" src="{{ '/assets/images/about-me.jpeg' | relative_url }}" />
-    </div>
+  <div class="p column" style="flex: 1;">
+    <img
+      class="about-me-img fit-image card-shadow"
+      src="{{ '/assets/images/about-me.jpeg' | relative_url }}"
+    />
   </div>
 </div>
