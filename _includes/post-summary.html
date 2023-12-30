@@ -1,7 +1,7 @@
 {% assign post = include.content %}
 
 {% if post %}
-  <p>
+  <div>
     {% if post.main-image-url %}
       <a href="{{ post.url | relative_url }}">
         <img
@@ -12,7 +12,17 @@
       </a>
     {% endif %}
 
-    <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a> -
-    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-  </p>
+    <div class="post-description">
+      <h3 class="post-header">
+        <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>
+      </h3>
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      <h5 class="read-more-link">
+        <a href="{{ post.url | relative_url }}">
+          <strong>Read more&nbsp;</strong>
+          {% include icon.html class="point-right" %}
+        </a>
+      </h5>
+    </div>
+  </div>
 {% endif %}

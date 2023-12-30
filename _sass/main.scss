@@ -54,17 +54,7 @@ nav .nav-links {
   color: $blue-green;
 }
 
-h1 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  background: $blue-green;
-  padding: 2rem;
-  color: $white;
-  font-size: 1rem;
-}
-
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   color: $blue-green;
 }
 
@@ -186,11 +176,8 @@ code {
 }
 
 .column-container {
+  gap: 1em;
   display: flex;
-}
-
-.column:not(.column:last-child) {
-  margin-right: 0.5em;
 }
 
 .column {
@@ -210,8 +197,37 @@ code {
   margin-bottom: 0.3em;
 }
 
-.card-shadow {
+img {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+img.no-shadow {
+  box-shadow: none;
+}
+
+.card-shadow {
+  line-height: 1.6;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.post-columns .column-img {
+  margin-top: 0;
+}
+
+.post {
+  margin-top: 3em;
+}
+
+.read-more-link {
+  margin-bottom: 0;
+}
+
+.post-description {
+  padding: 2em 1em;
+}
+
+.post-header {
+  margin-top: 0;
 }
 
 #d3-vis {

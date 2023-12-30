@@ -11,16 +11,20 @@ Showcase for smaller scale projects! I also post these on <a href="https://www.h
 {% assign num-rows = projects.size | divided_by: 2 | ceil %}
 
 {% for i in (0..num-rows) %}
-  <div class='column-container'>
+  <div class='column-container post-columns'>
     {% assign index = i | times: 2 %}
     {% assign project = projects[index] %}
-    <div class='column'>
+    <div class='column card-shadow post'>
       {% include post-summary.html content=project %}
     </div>
     {% assign index = i | times: 2 | plus: 1 %}
     {% assign project = projects[index] %}
-    <div class='column'>
-      {% include post-summary.html content=project %}
-    </div>
+    {% if project %}
+      <div class='column card-shadow post'>
+        {% include post-summary.html content=project %}
+      </div>
+    {% else %}
+      <div class='column'></div>
+    {% endif %}
   </div>
 {% endfor %}
