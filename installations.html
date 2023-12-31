@@ -3,23 +3,32 @@ title: Installations
 permalink: /installations/
 ---
 
+<style>
+.installation-description {
+  padding-top: 1em;
+}
+.date {
+  font-size: 0.8em;
+}
+</style>
+
 {% include handwritten-header.html url="/assets/images/headers/installations.png" %}
 
-{% for installation in site.installations %}
+{% assign installations = site.installations | reverse %}
+
+{% for installation in installations %}
   <div class="installation">
-    <a href="{{ installation.url | relative_url }}">
-      <strong>{{ installation.name }}</strong>
-    </a>
-    -
+    <h3 class="centered">
+      <a href="{{ installation.url | relative_url }}">
+        <strong>{{ installation.name }}</strong>
+      </a>
 
-    {% if installation.year %}
-      <span class="date">{{ installation.year }}</span>
-      -
-    {% endif %}
-
-    {{ installation.excerpt | truncatewords: 20, ' ...' | remove: '<p>' | remove: '</p>' }}
-
-    <a href="{{ installation.url | relative_url }}">read more!</a>
+      {% if installation.year %}
+      <div class="centered">
+        <span class="date">{{ installation.year }}</span>
+      </div>
+      {% endif %}
+    </h3>
 
     {% if installation.main-image %}
       {% assign filename = installation.image-dir | append: installation.main-image %}
@@ -39,5 +48,12 @@ permalink: /installations/
         {% endif %}
       </div>
     {% endif %}
+
+    <div class="installation-description">
+      {{ installation.excerpt | truncatewords: 20, ' ...' | remove: '<p>' | remove: '</p>' }}
+
+      <a href="{{ installation.url | relative_url }}">read more!</a>
+    </div>
+
   </div>
 {% endfor %}
