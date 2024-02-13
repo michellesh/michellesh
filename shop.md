@@ -20,7 +20,7 @@ title: Shop
 
 <div class='column-container post-columns'>
   <a class='column card-shadow shop-link' href="https://mickymakes.square.site" target="_blank">
-    Online store via Square
+    Square online store
     {% include icon.html icon="link-away" %}
   </a>
   <a class='column card-shadow shop-link' href="https://www.etsy.com/shop/MickyMakery" target="_blank">
