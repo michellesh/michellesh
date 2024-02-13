@@ -1,5 +1,6 @@
 ---
 title: Shop
+permalink: /shop/
 ---
 
 <style>
