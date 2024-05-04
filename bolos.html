@@ -1,0 +1,108 @@
+---
+title: Bolos & Jewelry
+permalink: /bolos/
+bolo-image-dir: /assets/images/bolos/
+jewelry-image-dir: /assets/images/jewelry/
+columns: [1, 2]
+bolo-images:
+  -
+    filename: spider.jpg
+    title: spider
+    column: 1
+  -
+    filename: wolf.jpg
+    title: wolf
+    column: 1
+  -
+    filename: owl.jpg
+    title: owl
+    column: 1
+  -
+    filename: dragonfly.jpg
+    title: dragonfly
+    column: 2
+  -
+    filename: rabbit.jpg
+    title: rabbit
+    column: 2
+  -
+    filename: otter.jpg
+    title: otter
+    column: 2
+  -
+    filename: bighorn-sheep.jpg
+    title: bighorn sheep
+
+jewelry-images:
+  -
+    filename: agate-earrings.jpg
+    title: agate earrings
+    column: 1
+  -
+    filename: agate-pair-heart.jpg
+    title: mexican crazy lace agate pair
+    column: 2
+  -
+    filename: hubei-turquoise.jpg
+    title: hubei turquoise
+    column: 1
+  -
+    filename: opalized-wood.jpg
+    title: opalized wood
+    column: 2
+  -
+    filename: pieterscite-pair.jpg
+    title: pieterscite pair
+    column: 1
+  -
+    filename: roserita-pair.jpg
+    title: roserita pair
+    column: 2
+  -
+    filename: turquoise-variscite-pair.jpg
+    title: turquoise variscite pair
+    column: 1
+  -
+    filename: variscite-ring.jpg
+    title: variscite ring
+    column: 2
+---
+
+<h2 class="page-header centered">Bolos</h2>
+
+<div class='column-container'>
+  {% for column in page.columns %}
+    <div class='column'>
+      {% assign column-images = page.bolo-images | where: 'column', column %}
+      {% for image in column-images %}
+        {% assign filename = page.bolo-image-dir | append: image.filename %}
+        <img
+          class="fit-image column-img easeload"
+          onload="this.style.opacity=1"
+          title="{{ image.title }}"
+          src="{{ filename | relative_url }}"
+        />
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+
+
+<h2 class="page-header centered">Jewelry</h2>
+
+<div class='column-container'>
+  {% for column in page.columns %}
+    <div class='column'>
+      {% assign column-images = page.jewelry-images | where: 'column', column %}
+      {% for image in column-images %}
+        {% assign filename = page.jewelry-image-dir | append: image.filename %}
+        <img
+          class="fit-image column-img easeload"
+          onload="this.style.opacity=1"
+          title="{{ image.title }}"
+          src="{{ filename | relative_url }}"
+        />
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
