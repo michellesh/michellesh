@@ -7,13 +7,16 @@ title: Hello!
 .about-me-img {
   margin-top: 2.5em;
 }
+.hello-header {
+  margin-top: 2em;
+}
 </style>
 
 
 <div class="column-container">
   <div class="p column" style="flex: 1.5; padding-right: 2em;">
 
-    {% include handwritten-header.html url="/assets/images/headers/hello.png" %}
+    <h2 class="hello-header">hello!</h2>
 
     <p>
       I'm Michelle! People also call me Micky.

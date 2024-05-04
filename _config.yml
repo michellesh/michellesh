@@ -15,24 +15,28 @@ defaults:
     values:
       layout: "installation"
       permalink: /installations/:path
+      dir: /installations/
   - scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
       permalink: /projects/:title
+      dir: /projects/
   - scope:
       path: ""
       type: "project-sub-pages"
     values:
       layout: "project-sub-page"
       permalink: /projects/:title
+      dir: /projects/
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       permalink: /posts/:title
+      dir: /posts/
   - scope:
       path: ""
     values:

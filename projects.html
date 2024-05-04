@@ -3,9 +3,6 @@ title: Projects
 permalink: /projects/
 ---
 
-{% include handwritten-header.html url="/assets/images/headers/projects.png" %}
-
-Showcase for smaller scale projects! I also post these on <a href="https://www.hackster.io/michellesh/" target="_blank">hackster.io</a>
 
 {% assign projects = site.projects | where_exp: 'project', 'project.hidden != true' | reverse %}
 {% assign num-rows = projects.size | divided_by: 2 | ceil %}

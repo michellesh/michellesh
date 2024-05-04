@@ -3,6 +3,9 @@ $sage: #789F97;
 $dark-sage: #4B5E53;
 $mustard: #9f8a2d;
 $white: #EAE7E5;
+$mauve: #938e97;
+$dark-gray: #444;
+$bright-blue: #094C73;
 
 $code-block: #f8f8f8;
 
@@ -36,9 +39,10 @@ iframe {
 
 nav {
   padding-bottom: 2em;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-family: belanosima;
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 1rem;
   letter-spacing: .15rem;
 }
 
@@ -51,11 +55,21 @@ nav .nav-links {
 .mickymakes-title {
   text-align: center;
   padding-bottom: 2rem;
-  color: $blue-green;
+  color: $dark-gray;
+}
+
+h1, h2, h3 {
+  font-family: belanosima;
 }
 
 h1, h2, h3, h4, h5 {
-  color: $blue-green;
+  text-transform: lowercase;
+  letter-spacing: 0.15rem;
+  color: $dark-gray;
+}
+
+h1, h2, h3, h4, h5 a {
+  color: $dark-gray;
 }
 
 h2 {
@@ -67,23 +81,33 @@ h3 {
 }
 
 a {
-  color: $sage;
+  color: $bright-blue;
   text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, .nav-links a, a:has(img) {
+  color: $dark-gray;
+  font-weight: normal;
+}
+
 a:hover {
-  color: $dark-sage;
+  color: $dark-gray;
 }
 
 .nav-links a:first-child {
-  padding: 10px 10px 10px 0;
+  padding: 8px 0;
 }
 .nav-links a {
-  padding: 10px;
+  padding: 8px 0;
+}
+.nav-links a.nav-active {
+  border-bottom: 3px dotted #777;
+  //text-decoration: underline;
 }
 .nav-links a:last-child {
-  padding: 10px 0 10px 10px;
+  padding: 8px 0;
 }
 .nav-links a:hover {
   animation: wobble .5s ease;
@@ -151,7 +175,7 @@ code {
 .date {
   font-weight: normal;
   font-style: italic;
-  color: $mustard;
+  color: $dark-gray;
 }
 
 .fit-image {
@@ -159,7 +183,7 @@ code {
 }
 
 .page-header {
-  margin: 2rem 0;
+  margin: 3rem 0;
   text-align: center;
 }
 

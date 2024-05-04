@@ -1,8 +1,12 @@
 const BLUE_GREEN = "#1E6A7F";
 const SAGE = "#789F97";
 const DARK_SAGE = "#4B5E53";
-const MUSTARD = "#9f8a2d";
+const MUSTARD = "#a08d59";//"#9f8a2d";
 const WHITE = "#EAE7E5";
+const LAVENDAR = "#6C5B8A";
+const DARK_BLUE = "#36545e";
+const DARK_TEAL = "#58756b";
+const BRIGHT_BLUE = "#094C73";
 
 const DARK_YELLOW = "#D0BA58";
 const LIGHT_YELLOW = "#EDE0A6";

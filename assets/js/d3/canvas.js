@@ -22,7 +22,7 @@ const yMax = Math.max(...MICKY_MAKES_NODES.map(n => n.y));
 const colorScale = d3
   .scaleLinear()
   .domain([yMin, yMax])
-  .range([SAGE, BLUE_GREEN]);
+  .range([BRIGHT_BLUE, "#63A0A0"]);
 
 const pointerNode = { isPointer: true };
 const nodes = d3.range(NUM_NODES).map(i => {
