@@ -7,6 +7,7 @@ const LAVENDAR = "#6C5B8A";
 const DARK_BLUE = "#36545e";
 const DARK_TEAL = "#58756b";
 const BRIGHT_BLUE = "#094C73";
+const BRIGHT_TEAL = "#63A0A0";
 
 const DARK_YELLOW = "#D0BA58";
 const LIGHT_YELLOW = "#EDE0A6";

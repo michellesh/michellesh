@@ -12,7 +12,7 @@ images:
   shark: /assets/images/steel-water-creature-lamps/shark.gif
 ---
 
-<h3 class="page-header">Shark</h3>
+<h2>Shark</h2>
 
 Freeform shark drilled in steel with a steel base. The custom walnut enclosure on the back is cut with a CNC router and houses all the wires and ESP32 board, and it includes a micro USB port for power. The LEDs shimmer to create the appearance of moving water.
 
@@ -27,7 +27,7 @@ Freeform shark drilled in steel with a steel base. The custom walnut enclosure o
   </div>
 </div>
 
-<h3 class="page-header">Jellyfish</h3>
+<h2>Jellyfish</h2>
 
 Again with a drill press, I freehanded 130 holes in a scrap piece of steel to make this cute little jelly. The jellyfish has a 3D printed enclosure to house the wires and ESP32 board. The twinkling is very subtle, but I coded it with the idea of looking through water at a jellyfish.
 

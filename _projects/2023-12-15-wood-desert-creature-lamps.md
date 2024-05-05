@@ -18,7 +18,7 @@ images:
 
 All three of these desert-themed wood creatures are first designed in a sketch and then cut out of a piece of walnut with a CNC router. The interior contains a ring a of LEDs, a piece of acrylic ito diffuse the light, and an ESP32 board to control the light patterns. The LEDs softly twinkle and slowly cycle through three different color palettes. They come with a removable magnet-on base for tabletop display and are also wall mountable.
 
-<h3 class="page-header">Bee</h3>
+<h2>Bee</h2>
 
 {% include image.html url=page.images.bee-front %}
 
@@ -31,7 +31,7 @@ All three of these desert-themed wood creatures are first designed in a sketch a
   </div>
 </div>
 
-<h3 class="page-header">Globemallow</h3>
+<h2>Globemallow</h2>
 
 {% include image.html url=page.images.globemallow %}
 
@@ -44,7 +44,7 @@ All three of these desert-themed wood creatures are first designed in a sketch a
   </div>
 </div>
 
-<h3 class="page-header">Juniper Tree</h3>
+<h2>Juniper Tree</h2>
 
 {% include image.html url=page.images.juniper-wall-yellow %}
 

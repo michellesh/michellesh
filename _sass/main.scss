@@ -6,6 +6,7 @@ $white: #EAE7E5;
 $mauve: #938e97;
 $dark-gray: #444;
 $bright-blue: #094C73;
+$bright-teal: #63A0A0;
 
 $code-block: #f8f8f8;
 
@@ -103,8 +104,7 @@ a:hover {
   padding: 8px 0;
 }
 .nav-links a.nav-active {
-  border-bottom: 3px dotted #777;
-  //text-decoration: underline;
+  border-bottom: 3px dotted $bright-teal;
 }
 .nav-links a:last-child {
   padding: 8px 0;
