@@ -2,7 +2,7 @@ $blue-green: #1E6A7F;
 $sage: #789F97;
 $dark-sage: #4B5E53;
 $mustard: #9f8a2d;
-$white: #EAE7E5;
+$white: #fff;//#EAE7E5;
 $mauve: #938e97;
 $dark-gray: #444;
 $bright-blue: #094C73;
@@ -289,6 +289,11 @@ html, body {
 .footer {
   padding-top: 2em;
   text-align: center;
+  font-weight: normal;
+}
+
+.footer a {
+  margin: 0 1em;
 }
 
 .footer img {

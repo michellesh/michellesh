@@ -8,7 +8,8 @@ title: Hello!
   margin-top: 2.5em;
 }
 .hello-header {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 </style>
 
@@ -18,14 +19,14 @@ title: Hello!
 
     <h2 class="hello-header">hello!</h2>
 
-    <p>
+    <p style="margin-top: 0.5em">
       I'm Michelle! People also call me Micky.
     </p>
     <p>
-      I'm a software engineer pursuing creativity. Currently I'm learning about LEDs and posting about it here. I love code and art and combining them. I also like drawing diagrams and soldering.
+      I'm a software engineer pursuing creativity. Currently I'm exploring ways to integrate LEDs into sculptures of all sizes, usually made of wood and/or steel. I love code and art and combining them. I also like drawing diagrams and soldering.
     </p>
     <p>
-      Check out some of the <a href="/installations">installations</a> I've worked on, or some of my smaller-scale <a href="/projects">projects</a>!
+      Check out some of the <a href="/installations">LED installations</a> I've worked on, or some of my smaller-scale <a href="/projects">LED projects</a>! I have also recently fallen in love with the art of making <a href="/bolos">bolo ties and jewelry</a>.
     </p>
   </div>
   <div class="p column" style="flex: 1;">
