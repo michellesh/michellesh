@@ -2,6 +2,10 @@
 
 {% if post %}
   <div>
+    <h3 class="post-header">
+      <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>
+    </h3>
+
     {% if post.main-image-url %}
       <a href="{{ post.url | relative_url }}">
         <img
@@ -13,16 +17,10 @@
     {% endif %}
 
     <div class="post-description">
-      <h3 class="post-header">
-        <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>
-      </h3>
-      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-      <h5 class="read-more-link">
-        <a href="{{ post.url | relative_url }}">
-          <strong>Read more&nbsp;</strong>
-          {% include icon.html icon="chevron" width="1em" class="point-right" %}
-        </a>
-      </h5>
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }} ...
+      <a href="{{ post.url | relative_url }}">
+        read more!
+      </a>
     </div>
   </div>
 {% endif %}

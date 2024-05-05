@@ -11,13 +11,13 @@ permalink: /projects/
   <div class='column-container post-columns'>
     {% assign index = i | times: 2 %}
     {% assign project = projects[index] %}
-    <div class='column card-shadow post'>
+    <div class='column post'>
       {% include post-summary.html content=project %}
     </div>
     {% assign index = i | times: 2 | plus: 1 %}
     {% assign project = projects[index] %}
     {% if project %}
-      <div class='column card-shadow post'>
+      <div class='column post'>
         {% include post-summary.html content=project %}
       </div>
     {% else %}
