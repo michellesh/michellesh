@@ -11,7 +11,7 @@ images:
   fluxor-flap: /assets/images/fluxor-dragon/fluxor-flap.gif
 ---
 
-A fire-breathing dragon built with love by [Alex Gennett](https://alexgennettcreative.com/). LEDs are installed on the wings, belly, and eyes, and are controlled by a wireless controller shaped like a dragon egg.
+A fire-breathing dragon built with love by [Alex Gennett](https://alexgennettcreative.com/){:target="blank"}. LEDs are installed on the wings, belly, and eyes, and are controlled by a wireless controller shaped like a dragon egg.
 
 {% include image.html url=page.images.fluxor-lasers %}
 
