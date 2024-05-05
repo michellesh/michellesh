@@ -7,13 +7,14 @@ trigger = function () {
 </script>
 <style>
 .menu-button {
-  background: #EAE7E5;
+  background: #fff;
   border: none;
   padding: 1em;
   font-size: 0.6em;
   font-weight: bold;
-  color: #789F97;
+  color: #444;
   letter-spacing: .08em;
+  font-family: belanosima;
 }
 .mobile-menu {
   text-align: center;
@@ -21,8 +22,8 @@ trigger = function () {
   letter-spacing: .08em;
 }
 #menu-content {
-  border-top: 1px solid #789F97;
-  border-bottom: 1px solid #789F97;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
 }
 #menu-content a {
   display: block;
@@ -60,7 +61,7 @@ trigger = function () {
   <img class="no-shadow" style="width:100%;" src="/assets/images/micky-makes.png" />
   <button onclick="trigger()" class="menu-button">
     {% include icon.html id="Icon" icon="chevron" class="point-down" width="1em" %}
-    MENU
+    menu
   </button>
   <div id="Slider">
     <div id="menu-content">
