@@ -12,7 +12,7 @@ permalink: /installations/
 }
 </style>
 
-{% assign installations = site.installations | reverse %}
+{% assign installations = site.installations | sort: "year" | reverse %}
 
 {% for installation in installations %}
   <div class="installation">
