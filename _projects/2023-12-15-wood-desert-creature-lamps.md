@@ -16,7 +16,7 @@ images:
   wall-mount-hardware: /assets/images/wood-desert-creature-lamps/wall-mount-hardware.jpeg
 ---
 
-All three of these desert-themed wood creatures are first designed in a sketch and then cut out of a piece of walnut with a CNC router. The interior contains a ring a of LEDs, a piece of acrylic ito diffuse the light, and an ESP32 board to control the light patterns. The LEDs softly twinkle and slowly cycle through three different color palettes. They come with a removable magnet-on base for tabletop display and are also wall mountable.
+All three of these desert-themed wood creatures are first designed in a sketch and then cut out of a piece of walnut with a CNC router. The interior contains a ring a of LEDs, a piece of acrylic to diffuse the light, and an ESP32 board to control the light patterns. The LEDs softly twinkle and slowly cycle through three different color palettes. They come with wall mount hardware as well as a removable magnet-on base for tabletop display.
 
 <h2>Bee</h2>
 
