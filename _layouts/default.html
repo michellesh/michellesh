@@ -15,6 +15,14 @@
     {% if site.google_analytics and jekyll.environment == 'production' %}
       {% include analytics.html %}
     {% endif %}
+
+    <script type="text/javascript" src="/assets/js/chocolat.js"></script>
+    <link rel="stylesheet" href="/assets/css/chocolat.css" type="text/css" media="screen" >
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'))
+      })
+    </script>
   </head>
   <body>
     <div class="wrapper">
