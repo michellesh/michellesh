@@ -5,58 +5,93 @@ bolo-image-dir: /assets/images/bolos/
 jewelry-image-dir: /assets/images/jewelry/
 bolo-images:
   -
-    filename: spider.jpg
-    title: Spider bolo tie: stainless steel / walnut
+    filename: /assets/images/spenser-bolo/wolf-bolo.jpg
+    title: Wolf bolo tie / stainless steel / walnut. Photo by Spenser Heaps.
   -
-    filename: wolf.jpg
-    title: Wolf bolo tie: stainless steel / walnut
+    filename: /assets/images/spenser-bolo/owl-bolo.jpg
+    title: Owl bolo tie / stainless steel / walnut. Photo by Spenser Heaps.
   -
-    filename: owl.jpg
-    title: Owl bolo tie: stainless steel / walnut
+    filename: /assets/images/spenser-bolo/dragonfly-bolo.jpg
+    title: Dragonfly bolo tie / stainless steel / walnut. Photo by Spenser Heaps.
   -
-    filename: dragonfly.jpg
-    title: Dragonfly bolo tie: stainless steel / walnut
+    filename: /assets/images/spenser-bolo/bighorn-sheep-bolo.jpg
+    title: Bighorn sheep bolo tie / stainless steel / walnut. Photo by Spenser Heaps.
   -
-    filename: rabbit.jpg
-    title: Rabbit bolo tie: stainless steel / walnut
+    filename: /assets/images/spenser-bolo/spider-bolo.jpg
+    title: Spider bolo tie / stainless steel / walnut. Photo by Spenser Heaps.
+    break: true
   -
-    filename: otter.jpg
-    title: Otter bolo tie: stainless steel / walnut
+    filename: /assets/images/bolos/spider.jpg
+    title: Spider bolo tie / stainless steel / walnut
+  -
+    filename: /assets/images/bolos/wolf.jpg
+    title: Wolf bolo tie / stainless steel / walnut
+  -
+    filename: /assets/images/bolos/owl.jpg
+    title: Owl bolo tie / stainless steel / walnut
+  -
+    filename: /assets/images/bolos/dragonfly.jpg
+    title: Dragonfly bolo tie / stainless steel / walnut
+  -
+    filename: /assets/images/bolos/rabbit.jpg
+    title: Rabbit bolo tie / stainless steel / walnut
+  -
+    filename: /assets/images/bolos/otter.jpg
+    title: Otter bolo tie / stainless steel / walnut
+
 
 jewelry-images:
   -
-    filename: hubei-turquoise-brass.jpg
+    filename: /assets/images/jewelry/hubei-turquoise-brass.jpg
     title: Hubei turquoise / brass necklace
   -
-    filename: malachite-1.jpg
+    filename: /assets/images/jewelry/malachite-1.jpg
     title: Malachite / brass necklace
   -
-    filename: malachite-2.jpg
-    title: Malachite / brass necklace
-  -
-    filename: moonstone.jpg
+    filename: /assets/images/jewelry/moonstone.jpg
     title: Moonstone / sterling silver necklace
   -
-    filename: shattuckite.jpg
+    filename: /assets/images/jewelry/shattuckite.jpg
     title: Shattuckite / brass necklace
   -
-    filename: agate-earrings.jpg
+    filename: /assets/images/jewelry/malachite-2.jpg
+    title: Malachite / brass necklace
+  -
+    filename: /assets/images/jewelry/agate-earrings.jpg
     title: Agate / brass earrings
   -
-    filename: agate-pair-heart.jpg
+    filename: /assets/images/spenser-bolo/agate-earrings.jpg
+    title: Agate / brass earrings. Photo by Spenser Heaps.
+    break: true
+  -
+    filename: /assets/images/jewelry/agate-pair-heart.jpg
     title: Mexican crazy lace agate / brass friendship necklaces
   -
-    filename: pieterscite-pair.jpg
-    title: Pieterscite / sterling silver necklaces
+    filename: /assets/images/jewelry/variscite-ring.jpg
+    title: Variscite / sterling silver ring
   -
-    filename: roserita-pair.jpg
+    filename: /assets/images/jewelry/roserita-pair.jpg
     title: Roserita / brass necklaces
   -
-    filename: turquoise-variscite-pair.jpg
+    filename: /assets/images/spenser-bolo/agate-prong-necklace.jpg
+    title: Agate / brass necklace. Photo by Spenser Heaps.
+  -
+    filename: /assets/images/spenser-bolo/crazylace-necklace.jpg
+    title: Crazy lace agate / brass friendship necklaces. Photo by Spenser Heaps.
+    break: true
+  -
+    filename: /assets/images/jewelry/turquoise-variscite-pair.jpg
     title: Turquoise and variscite / sterling silver necklaces
   -
-    filename: variscite-ring.jpg
-    title: Variscite / sterling silver ring
+    filename: /assets/images/jewelry/pieterscite-pair.jpg
+    title: Pieterscite / sterling silver necklaces
+    break: true
+  -
+    filename: /assets/images/spenser-bolo/steel-necklace.jpg
+    title: Painted steel stone / sterling silver necklace. Photo by Spenser Heaps.
+  -
+    filename: /assets/images/spenser-bolo/turquoise-necklace.jpg
+    title: Turquoise / brass necklace. Photo by Spenser Heaps.
 ---
 
 <style>
@@ -68,21 +103,26 @@ jewelry-images:
 .gallery-images>* {
   flex: 1 1 200px;
 }
+.photo-credit {
+  margin: 3em 0;
+}
 </style>
 
 <h2 class="page-header centered">Bolos</h2>
 
 <div class='gallery-images chocolat-parent'>
   {% for image in page.bolo-images %}
-    {% assign filename = page.bolo-image-dir | append: image.filename %}
-    <a class="chocolat-image" href="{{ filename | relative_url }}" title="{{ image.title }}">
+    <a class="chocolat-image" href="{{ image.filename | relative_url }}" title="{{ image.title }}">
       <img
         class="fit-image column-img easeload"
         onload="this.style.opacity=1"
         title="{{ image.title }}"
-        src="{{ filename | relative_url }}"
+        src="{{ image.filename | relative_url }}"
       />
     </a>
+    {% if image.break %}
+      <div style="flex-basis: 100%"></div>
+    {% endif %}
   {% endfor %}
 </div>
 
@@ -91,14 +131,18 @@ jewelry-images:
 
 <div class='gallery-images chocolat-parent'>
   {% for image in page.jewelry-images %}
-    {% assign filename = page.jewelry-image-dir | append: image.filename %}
-    <a class="chocolat-image" href="{{ filename | relative_url }}" title="{{ image.title }}">
+    <a class="chocolat-image" href="{{ image.filename | relative_url }}" title="{{ image.title }}">
       <img
         class="fit-image column-img easeload"
         onload="this.style.opacity=1"
         title="{{ image.title }}"
-        src="{{ filename | relative_url }}"
+        src="{{ image.filename | relative_url }}"
       />
     </a>
+    {% if image.break %}
+      <div style="flex-basis: 100%"></div>
+    {% endif %}
   {% endfor %}
 </div>
+
+<div class="photo-credit">Lifestyle photos by <a href="https://www.spenserheaps.com/">Spenser Heaps</a></div>

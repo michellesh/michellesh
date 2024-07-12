@@ -29,3 +29,7 @@ permalink: /shop/
   </a>
   180 E Main St - Escalante UT
 </div>
+
+
+<h3>commissions</h3>
+<div class="shop-link">I am open to commissions for installations, jewelry, bolos, or LED art! Send me a message on <a href="https://www.instagram.com/mickymakes.art" target="_blank">Instagram.</a></div>
