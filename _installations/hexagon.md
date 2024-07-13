@@ -31,3 +31,12 @@ Have you ever wanted to walk INSIDE an infinity mirror? This is an infinity mirr
 
 
 {% include gallery.html images=page.images %}
+
+
+### Video
+
+This 3 minute video demonstrates the choreography for one of the songs "Mountains" from the Interstellar soundtrack.
+
+<video controls width="100%">
+  <source src="https://github.com/michellesh/michellesh/raw/gh-pages/assets/images/hexagon/mountains480p.mp4" type="video/mp4" />
+</video>
