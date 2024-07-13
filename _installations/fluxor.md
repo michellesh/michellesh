@@ -3,7 +3,7 @@ name: Fluxor the Dragon
 project-id: fluxor
 year: 2024
 github: https://github.com/michellesh/fluxor-dragon
-main-image: fluxor-dragon.jpg
+main-image: fluxor-blur.jpg
 image-dir: /assets/images/fluxor-dragon/
 images:
   fluxor-lasers: /assets/images/fluxor-dragon/fluxor-lasers.gif

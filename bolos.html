@@ -100,14 +100,6 @@ jewelry-images:
 ---
 
 <style>
-.gallery-images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-.gallery-images>* {
-  flex: 1 1 200px;
-}
 .photo-credit {
   margin: 3em 0;
 }
@@ -115,39 +107,11 @@ jewelry-images:
 
 <h2 class="page-header centered">Bolos</h2>
 
-<div class='gallery-images chocolat-parent'>
-  {% for image in page.bolo-images %}
-    <a class="chocolat-image" href="{{ image.filename | relative_url }}" title="{{ image.title }}">
-      <img
-        class="fit-image column-img easeload"
-        onload="this.style.opacity=1"
-        title="{{ image.title }}"
-        src="{{ image.filename | relative_url }}"
-      />
-    </a>
-    {% if image.break %}
-      <div style="flex-basis: 100%"></div>
-    {% endif %}
-  {% endfor %}
-</div>
+{% include gallery.html images=page.bolo-images %}
 
 
 <h2 class="page-header centered">Jewelry</h2>
 
-<div class='gallery-images chocolat-parent'>
-  {% for image in page.jewelry-images %}
-    <a class="chocolat-image" href="{{ image.filename | relative_url }}" title="{{ image.title }}">
-      <img
-        class="fit-image column-img easeload"
-        onload="this.style.opacity=1"
-        title="{{ image.title }}"
-        src="{{ image.filename | relative_url }}"
-      />
-    </a>
-    {% if image.break %}
-      <div style="flex-basis: 100%"></div>
-    {% endif %}
-  {% endfor %}
-</div>
+{% include gallery.html images=page.jewelry-images %}
 
 <div class="photo-credit">Lifestyle photos by <a href="https://www.spenserheaps.com/">Spenser Heaps</a></div>

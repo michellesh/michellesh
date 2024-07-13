@@ -9,7 +9,7 @@ permalink: /shop/
 }
 </style>
 
-<h3>digital</h3>
+<h3>Digital</h3>
 <div class="shop-link">
   <a href="https://mickymakes.square.site" target="_blank">
     Square online store
@@ -22,7 +22,7 @@ permalink: /shop/
 </div>
 
 
-<h3>in store</h3>
+<h3>In store</h3>
 <div class="shop-link">
   <a href="https://cachecanning.com/" target="_blank">
     Cache Canning Co
@@ -31,5 +31,5 @@ permalink: /shop/
 </div>
 
 
-<h3>commissions</h3>
+<h3>Commissions</h3>
 <div class="shop-link">I am open to commissions for installations, jewelry, bolos, or LED art! Send me a message on <a href="https://www.instagram.com/mickymakes.art" target="_blank">Instagram.</a></div>

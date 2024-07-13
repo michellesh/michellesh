@@ -17,7 +17,7 @@ title: Hello!
 <div class="column-container">
   <div class="p column" style="flex: 1.5; padding-right: 2em;">
 
-    <h2 class="hello-header">hello!</h2>
+    <h2 class="hello-header">Hello!</h2>
 
     <p style="margin-top: 0.5em">
       I'm Michelle! People also call me Micky.

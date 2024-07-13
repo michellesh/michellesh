@@ -1,0 +1,25 @@
+<style>
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.gallery-images>* {
+  flex: 1 1 200px;
+}
+.gallery-break-row {
+  flex-basis: 100%;
+}
+</style>
+
+
+<div class='gallery-images chocolat-parent'>
+  {% for image in include.images %}
+    <a class="chocolat-image" href="{{ image.filename | relative_url }}" title="{{ image.title }}">
+      {% include image.html url=image.filename title=image.title %}
+    </a>
+    {% if image.break %}
+      <div class="gallery-break-row"></div>
+    {% endif %}
+  {% endfor %}
+</div>
