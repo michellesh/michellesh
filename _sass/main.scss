@@ -101,18 +101,40 @@ a:hover {
   color: $dark-gray;
 }
 
-.nav-links a:first-child {
-  padding: 8px 0;
-}
 .nav-links a {
   padding: 8px 0;
 }
 .nav-links a.nav-active {
   border-bottom: 3px dotted $bright-teal;
 }
-.nav-links a:last-child {
-  padding: 8px 0;
+
+/*
+ * Animate nav link border on hover
+ * Source https://www.sliderrevolution.com/resources/css-border-animation
+ */
+.nav-link {
+  border:none;
+  position: relative;
 }
+.nav-link:hover {
+  border: none;
+}
+.nav-link:has(> :not(.nav-active))::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  left: 50%;
+  top: 20px;
+  transition: all ease-in-out .2s;
+  border-bottom: 3px dotted #ccc;
+}
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/*
 .nav-links a:hover {
   animation: wobble .5s ease;
 }
@@ -125,6 +147,7 @@ a:hover {
   75% { transform: translateX(-0.5%); }
   100% { transform: translateX(0%); }
 }
+*/
 
 p, li, td, .p {
   line-height: 1.6;
