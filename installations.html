@@ -16,7 +16,7 @@ permalink: /installations/
 
 {% for installation in installations %}
   <div class="installation">
-    <h3 class="centered">
+    <h2 class="centered">
       <a href="{{ installation.url | relative_url }}">
         <strong>{{ installation.name }}</strong>
       </a>
@@ -26,7 +26,7 @@ permalink: /installations/
         <span class="date">{{ installation.year }}</span>
       </div>
       {% endif %}
-    </h3>
+    </h2>
 
     {% if installation.main-image %}
       {% assign filename = installation.image-dir | append: installation.main-image %}
