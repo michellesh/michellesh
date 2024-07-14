@@ -45,4 +45,28 @@
   h1, h2, h3, h4, h5, strong, a {
     font-weight: 550;
   }
+
+  /* left, right, and close icons */
+  .chocolat-wrapper.chocolat-visible .chocolat-left, .chocolat-wrapper.chocolat-visible .chocolat-right, .chocolat-wrapper.chocolat-visible .chocolat-close {
+    width: 10vw;
+    height: 10vw;
+    background-size: 8vw;
+  }
+
+  .chocolat-wrapper.chocolat-visible .chocolat-top {
+    height: 10vh;
+  }
+
+  .chocolat-wrapper.chocolat-visible .chocolat-bottom {
+    height: 10vh;
+    font-size: 2.5rem;
+  }
+
+  .chocolat-wrapper.chocolat-visible .chocolat-fullscreen {
+    display: none;
+  }
+
+  .chocolat-wrapper.chocolat-visible .chocolat-pagination {
+    padding-right: 0;
+  }
 }
