@@ -27,7 +27,7 @@ permalink: /shop/
   <a href="https://cachecanning.com/" target="_blank">
     Cache Canning Co
   </a>
-  180 E Main St - Escalante UT
+  Escalante UT
 </div>
 
 
