@@ -37,7 +37,7 @@ h4 {
 
 ### Flexible LED Scaffold
 
-I 3D printed a "scaffold" to mount the LEDs to using TPU filament so the structure would be flexible and easier to insert into the rigid exterior shell. To model the scaffold, I used Blender python scripts to calculate evenly spaced positions around a simple egg shape, then use those positions to generate rings with flat faces for each LED and notches for fastening the rings together.
+I 3D printed a "scaffold" to mount the LEDs to using TPU filament so the structure would be flexible and easier to insert into the rigid exterior shell. To model the scaffold, I used Blender python scripts to calculate evenly spaced positions around a simple egg shape, then use those positions to generate rings with flat faces for each LED and notches for linking the rings together.
 
 
 
@@ -46,7 +46,7 @@ I 3D printed a "scaffold" to mount the LEDs to using TPU filament so the structu
 
 #### Generating vertices, edges, and faces Blender
 
-[This YouTube video](https://www.youtube.com/watch?v=mN3n9b98HMk&t=544s&ab_channel=CGPython){:target="blank"} taught me how to generate mesh objects in Blender. Here's a template to get started. It generates a 2D square. (In Blender, go to the "Scripts" tab, paste this code, and click the "Play" button!)
+[This YouTube video](https://www.youtube.com/watch?v=mN3n9b98HMk&t=544s&ab_channel=CGPython){:target="blank"} taught me how to generate mesh objects in Blender. Below is a template to get started. It generates a 2D square. (In Blender, go to the "Scripts" tab, paste this code, and click the "Play" button!)
 
 ```python
 import bpy
@@ -151,7 +151,7 @@ Add notches to rings for easier assembly
 
 ### Install LEDs
 
-After gluing each ring together to complete the scaffold, fairy light LEDs are glued to each flat face of the scaffold rings with super glue. 
+After gluing each 3D-printed ring together to complete the scaffold, fairy light LEDs are glued to each flat face of the scaffold rings with super glue.
 
 ![Bare LEDs on scaffold]({{ page.images.bare-leds-on-scaffold | relative_url }}){:class="fit-image"}
 
