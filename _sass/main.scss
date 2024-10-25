@@ -11,10 +11,9 @@ $bright-teal: #63A0A0;
 $code-block: #f8f8f8;
 
 body {
-  //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-family: iawriter, monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   letter-spacing: .05rem;
-  font-size: .8rem;
+  font-size: .9rem;
   background: $white;
 }
 
@@ -42,11 +41,10 @@ iframe {
 nav {
   padding-bottom: 2em;
   text-transform: lowercase;
-  font-family: sometype;
+  font-family: belanosima;
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: .15rem;
-  font-style: italic;
 }
 
 nav .nav-links {
@@ -62,9 +60,7 @@ nav .nav-links {
 }
 
 h1, h2, h3 {
-  font-family: sometype;
-  font-weight: bold;
-  font-style: italic;
+  font-family: belanosima;
 }
 
 h1, h2, h3, h4, h5 {
@@ -201,7 +197,6 @@ code {
 
 .date {
   font-weight: normal;
-  //font-style: italic;
   color: $dark-gray;
 }
 
