@@ -22,7 +22,7 @@ images:
 
 {% include image.html url=page.images.portrait-1234 %}
 
-A simple grid of LEDs that displays the time in a rainbow gradient. Designed to facilitate learning LED programming. There's a QR code on the back that takes you to [a guide](https://github.com/michellesh/rainbow-clock/wiki){:target="blank"} that walks you through setting up your computer to upload code to the Rainbow Clock, and then coding your own LED patterns to display on the clock's 5x16 grid of LEDs.
+The Rainbow Clock is simply a digital clock with rainbow digits, but it’s also more than that. It is a tool for learning how to program LEDs. There's a QR code on the back that takes you to [a guide](https://github.com/michellesh/rainbow-clock/wiki){:target="blank"} that walks you through setting up your computer to upload code to the Rainbow Clock, and then coding your own LED patterns to display on the clock's grid of LEDs.
 
 
 ## Materials
