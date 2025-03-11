@@ -1,10 +1,8 @@
-- name: About
+- name: Home
   link: /
 - name: Installations
   link: /installations/
 - name: Projects
   link: /projects/
-- name: Bolos & Jewelry
-  link: /bolos/
-- name: Shop
-  link: /shop/
+- name: About
+  link: /about
