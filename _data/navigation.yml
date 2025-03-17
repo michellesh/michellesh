@@ -5,4 +5,7 @@
 - name: Projects
   link: /projects/
 - name: About
-  link: /about
+  link: /about/
+- name: Shop
+  link: https://mickymakes.square.site/
+  link-away: true

@@ -139,6 +139,22 @@ a:hover {
   width: 100%;
   left: 0;
 }
+.nav-link.link-away::after {
+  content: "";
+  background-image: url(/assets/images/icons/link-away.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-bottom: -3px;
+
+  /*prevent the bottom-border animation*/
+  position: relative;
+  left: auto;
+  top: auto;
+  border: none;
+}
 
 /*
 .nav-links a:hover {

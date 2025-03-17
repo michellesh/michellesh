@@ -50,8 +50,8 @@ trigger = function () {
 
   <div class="nav-links">
     {% for item in site.data.navigation %}
-      <div class="nav-link">
-        <a href="{{ item.link | relative_url }}" class="{% if item.link == page.dir %}nav-active{% endif %}">
+      <div class="nav-link {% if item.link-away %}link-away{% endif %}">
+        <a href="{{ item.link | relative_url }}" class="{% if item.link == page.dir %}nav-active{% endif %}" target="{% if item.link-away %}_blank{% endif %}">
           {{ item.name }}
         </a>
       </div>
