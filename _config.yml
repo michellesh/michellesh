@@ -48,7 +48,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
 
-url: mickymakes.art
+url: "https://mickymakes.art"
 
 google_analytics: G-XTF2JCGHV6
 
