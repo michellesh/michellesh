@@ -7,19 +7,25 @@ images:
 gallery-images:
   -
     filename: /assets/images/hexagon-prototype/light-show-entrance.jpg
+    title: Entrance to the light show
     break: true
   -
     filename: /assets/images/hexagon-prototype/tunnel-side-2.jpg
+    title: The view behind the wall on one side
   -
     filename: assets/images/hexagon-prototype/rainbow-knob.jpg
+    title: Spin the rainbow knob to select a track
     break: true
   -
     filename: assets/images/hexagon-prototype/instructions.jpg
+    title: Instructions to start the experience
   -
     filename: assets/images/hexagon-prototype/rainbow-menu.jpg
+    title: A menu of 7 tracks to choose from, each with a unique choreography
     break: true
   -
     filename: /assets/images/hexagon-prototype/lights-w-person.jpg
+    title: Sharing the experience with a friend
     break: true
 ---
 
@@ -31,6 +37,7 @@ This piece is a 1-meter long tube lined with LEDs that displays patterns and vis
 
 This piece was built as a prototype for a much larger (15x30 ft) version that made an appearance at Electric Forest in 2024. More info on the Electric Forest piece (plus a video!) can be found here: [https://mickymakes.art/installations/hexagon](https://mickymakes.art/installations/hexagon)
 
+This smaller, two-person variation cultivates a connection with your partner across the way, and allows you to see the light through the eyes of another.
 
 {% include gallery.html images=page.gallery-images %}
 
