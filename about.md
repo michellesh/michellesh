@@ -27,7 +27,7 @@ permalink: /about/
       I'm a software engineer pursuing creativity. I program LEDs for <a href="/installations">art installations</a>, and I also explore ways to integrate LEDs into <a href="/projects">sculptures of all sizes</a>, usually made of wood and/or steel. I love code and art and combining them. I also like drawing diagrams and soldering.
     </p>
     <p>
-      I also make jewelry and bolo ties. You can visit my online store here: <a href="https://mickymakes.shop">https://mickymakes.shop</a>
+      I also make jewelry and bolo ties. You can visit my online store here: <a href="https://mickymakesjewelry.com">https://mickymakesjewelry.com</a>
     </p>
   </div>
   <div class="p column" style="flex: 1;">
